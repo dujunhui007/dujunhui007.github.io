@@ -6,16 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="CSS基本知识2016-12-04 15:13 75人阅读 评论(0) 收藏 举报  分类：css版权声明：本文为博主原创文章，未经博主允许不得转载。目录(?)[+]css选择符（选择器）选择符表示要定义样式的对象，可以是元素本身，也可是一类元素或制定名称的元素在css选择符中，大致可有10种：类选择符、id选择符、class选择符、通配符、群组选择符、包含选择符、伪类选择符、伪对象选择符……关于">
+    <meta name="description" content="css选择符（选择器）选择符表示要定义样式的对象，可以是元素本身，也可是一类元素或制定名称的元素在css选择符中，大致可有10种：类选择符、id选择符、class选择符、通配符、群组选择符、包含选择符、伪类选择符、伪对象选择符……关于选择符的权重问题，css中用四位数来表示权重，权重的表达式如0000  ● 类型选择符的权重为 0001  ● class选择符的权重为 0010  ● id选择符的">
 <meta property="og:type" content="article">
-<meta property="og:title" content="数组常用方法2">
+<meta property="og:title" content="CSS基本知识">
 <meta property="og:url" content="http://yoursite.com/2017/06/11/hello-world2/index.html">
 <meta property="og:site_name" content="听话，叫叔叔！">
-<meta property="og:description" content="CSS基本知识2016-12-04 15:13 75人阅读 评论(0) 收藏 举报  分类：css版权声明：本文为博主原创文章，未经博主允许不得转载。目录(?)[+]css选择符（选择器）选择符表示要定义样式的对象，可以是元素本身，也可是一类元素或制定名称的元素在css选择符中，大致可有10种：类选择符、id选择符、class选择符、通配符、群组选择符、包含选择符、伪类选择符、伪对象选择符……关于">
-<meta property="og:updated_time" content="2017-06-11T12:06:57.124Z">
+<meta property="og:description" content="css选择符（选择器）选择符表示要定义样式的对象，可以是元素本身，也可是一类元素或制定名称的元素在css选择符中，大致可有10种：类选择符、id选择符、class选择符、通配符、群组选择符、包含选择符、伪类选择符、伪对象选择符……关于选择符的权重问题，css中用四位数来表示权重，权重的表达式如0000  ● 类型选择符的权重为 0001  ● class选择符的权重为 0010  ● id选择符的">
+<meta property="og:updated_time" content="2017-06-11T12:08:13.436Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="数组常用方法2">
-<meta name="twitter:description" content="CSS基本知识2016-12-04 15:13 75人阅读 评论(0) 收藏 举报  分类：css版权声明：本文为博主原创文章，未经博主允许不得转载。目录(?)[+]css选择符（选择器）选择符表示要定义样式的对象，可以是元素本身，也可是一类元素或制定名称的元素在css选择符中，大致可有10种：类选择符、id选择符、class选择符、通配符、群组选择符、包含选择符、伪类选择符、伪对象选择符……关于">
+<meta name="twitter:title" content="CSS基本知识">
+<meta name="twitter:description" content="css选择符（选择器）选择符表示要定义样式的对象，可以是元素本身，也可是一类元素或制定名称的元素在css选择符中，大致可有10种：类选择符、id选择符、class选择符、通配符、群组选择符、包含选择符、伪类选择符、伪对象选择符……关于选择符的权重问题，css中用四位数来表示权重，权重的表达式如0000  ● 类型选择符的权重为 0001  ● class选择符的权重为 0010  ● id选择符的">
     
     
         
@@ -35,7 +35,7 @@
         
     
     <!-- title -->
-    <title>数组常用方法2</title>
+    <title>CSS基本知识</title>
     <!-- styles -->
     <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="/lib/meslo-LG/styles.css">
@@ -116,15 +116,15 @@
     <div id="share" style="display: none">
       <ul>
   <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/2017/06/11/hello-world2/"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://twitter.com/share?url=http://yoursite.com/2017/06/11/hello-world2/&text=数组常用方法2"><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/2017/06/11/hello-world2/&title=数组常用方法2"><i class="fa fa-linkedin " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/2017/06/11/hello-world2/&is_video=false&description=数组常用方法2"><i class="fa fa-pinterest " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=数组常用方法2&body=Check out this article: http://yoursite.com/2017/06/11/hello-world2/"><i class="fa fa-envelope " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://getpocket.com/save?url=http://yoursite.com/2017/06/11/hello-world2/&title=数组常用方法2"><i class="fa fa-get-pocket " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://reddit.com/submit?url=http://yoursite.com/2017/06/11/hello-world2/&title=数组常用方法2"><i class="fa fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/2017/06/11/hello-world2/&title=数组常用方法2"><i class="fa fa-stumbleupon " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://digg.com/submit?url=http://yoursite.com/2017/06/11/hello-world2/&title=数组常用方法2"><i class="fa fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://yoursite.com/2017/06/11/hello-world2/&name=数组常用方法2&description="><i class="fa fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://yoursite.com/2017/06/11/hello-world2/&text=CSS基本知识"><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/2017/06/11/hello-world2/&title=CSS基本知识"><i class="fa fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/2017/06/11/hello-world2/&is_video=false&description=CSS基本知识"><i class="fa fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=CSS基本知识&body=Check out this article: http://yoursite.com/2017/06/11/hello-world2/"><i class="fa fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://yoursite.com/2017/06/11/hello-world2/&title=CSS基本知识"><i class="fa fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://yoursite.com/2017/06/11/hello-world2/&title=CSS基本知识"><i class="fa fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/2017/06/11/hello-world2/&title=CSS基本知识"><i class="fa fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://yoursite.com/2017/06/11/hello-world2/&title=CSS基本知识"><i class="fa fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://yoursite.com/2017/06/11/hello-world2/&name=CSS基本知识&description="><i class="fa fa-tumblr " aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
@@ -141,7 +141,7 @@
   <header>
     
     <h1 class="posttitle" itemprop="name headline">
-        数组常用方法2
+        CSS基本知识
     </h1>
 
 
@@ -152,7 +152,7 @@
       </span>
       
     <div class="postdate">
-        <time datetime="2017-06-11T12:06:57.122Z" itemprop="datePublished">2017-06-11</time>
+        <time datetime="2017-06-11T12:08:13.436Z" itemprop="datePublished">2017-06-11</time>
     </div>
 
 
@@ -163,8 +163,7 @@
   
 
   <div class="content" itemprop="articleBody">
-    <p>CSS基本知识<br>2016-12-04 15:13 75人阅读 评论(0) 收藏 举报</p>
-<p> 分类：<br>css<br>版权声明：本文为博主原创文章，未经博主允许不得转载。<br>目录(?)[+]<br>css选择符（选择器）<br>选择符表示要定义样式的对象，可以是元素本身，也可是一类元素或制定名称的元素<br>在css选择符中，大致可有10种：类选择符、id选择符、class选择符、通配符、群组选择符、包含选择符、伪类选择符、伪对象选择符……<br>关于选择符的权重问题，css中用四位数来表示权重，权重的表达式如0000<br>  ● 类型选择符的权重为 0001<br>  ● class选择符的权重为 0010<br>  ● id选择符的权重为 0100<br>  ● 子选择符的权重为 0010<br>  ● 属性选择符的权重为 0010<br>  ● 伪类选择符的权重为 0010<br>  ● 伪元素选择符的权重为 0010<br>  ● 包含选择符的权重为 ：为包含选择符的权重之和<br>  ● 内联样式的权重为 1000<br>  ● 继承样式的权重为 0000<br>在这里特别要注意的就是关于a标签的伪类选择-在使用a标签的伪类时，不可以打乱顺序<br>a:link{属性：属性值} 超链接初始化的状态<br>a:visited{属性：属性值} 超链接被访问后的状态<br>a:hover{属性：属性值} 鼠标悬停，即鼠标划过超链接时的状态<br>a:active{属性：属性值} 超链接被激活时的状态，即鼠标按下时它的状态<br>注意：联合使用的时候，样式的顺序是不能改变的link、visited、hover、active。顺序错误则超链接样式失败。<br>css核心属性<br>一、关于文本的css声明<br>  ● 文本大小：{font-size：value}<br>属性值为数值型，单位有几种常见的pt、rem、em、px（9p t= 12px \ 1em = 16px ）<br>也可以使用绝对大小关键字<br>xx-small ： 9px<br>x-small ：11px<br>small：13px<br>medium：16px<br>large：19px<br>x-large：23px<br>xx-large：27px<br>  ● 文本颜色：{color：颜色值}<br>  ● 文本字体：{font-family：“字体”}<br>  ● 字体加粗：{font-weight：bold（加粗的）/bolder（更粗的）/ normal（常规）/ 100-500-900}   在css规范中，字体粗细，分为9个等级，分为100-900；其中100对应最轻字体变形，而900对应最重字体变形，500规范字体；600-900加粗字体。<br>  ● 倾斜：{font-style：italic（倾斜度小）/ oblique（倾斜度大）/ normal（取消倾斜，常规显示）}<br>  ● 水平对齐方式：{text-align：left / right / center / justify(两端对齐对中文不起作用)}<br>  ● 垂直对齐方式：{vertical-align：top / bottom / middle}<br>  ● 行高：{line-height：normal/value}<br>文字属性的简写：（顺序）font-style \ font-variant \ font-weight \ font-size \ line-height \ font-family<br>  ● 文本修饰：text-decoration：none / underline(添加下划线) / overline(添加上划线) / line-through(添加删除线) / blink (闪烁)<br>  ● 首行缩进：{text-indent：value} value可取负值；该属性只对第一行起作用<br>  ● 字间距：{letter-spacing：value} 控制英文/汉字的字距<br>  ● 词间距：{word-spacing：value} 控制英文单词之间的距离<br>  ● 文体流控制：{layout-flow：vertical-ideographic 自上而下 / horizontal自左向右} 只支持IE浏览器<br>二、关于列表的css声明</p>
+    <p>css选择符（选择器）<br>选择符表示要定义样式的对象，可以是元素本身，也可是一类元素或制定名称的元素<br>在css选择符中，大致可有10种：类选择符、id选择符、class选择符、通配符、群组选择符、包含选择符、伪类选择符、伪对象选择符……<br>关于选择符的权重问题，css中用四位数来表示权重，权重的表达式如0000<br>  ● 类型选择符的权重为 0001<br>  ● class选择符的权重为 0010<br>  ● id选择符的权重为 0100<br>  ● 子选择符的权重为 0010<br>  ● 属性选择符的权重为 0010<br>  ● 伪类选择符的权重为 0010<br>  ● 伪元素选择符的权重为 0010<br>  ● 包含选择符的权重为 ：为包含选择符的权重之和<br>  ● 内联样式的权重为 1000<br>  ● 继承样式的权重为 0000<br>在这里特别要注意的就是关于a标签的伪类选择-在使用a标签的伪类时，不可以打乱顺序<br>a:link{属性：属性值} 超链接初始化的状态<br>a:visited{属性：属性值} 超链接被访问后的状态<br>a:hover{属性：属性值} 鼠标悬停，即鼠标划过超链接时的状态<br>a:active{属性：属性值} 超链接被激活时的状态，即鼠标按下时它的状态<br>注意：联合使用的时候，样式的顺序是不能改变的link、visited、hover、active。顺序错误则超链接样式失败。<br>css核心属性<br>一、关于文本的css声明<br>  ● 文本大小：{font-size：value}<br>属性值为数值型，单位有几种常见的pt、rem、em、px（9p t= 12px \ 1em = 16px ）<br>也可以使用绝对大小关键字<br>xx-small ： 9px<br>x-small ：11px<br>small：13px<br>medium：16px<br>large：19px<br>x-large：23px<br>xx-large：27px<br>  ● 文本颜色：{color：颜色值}<br>  ● 文本字体：{font-family：“字体”}<br>  ● 字体加粗：{font-weight：bold（加粗的）/bolder（更粗的）/ normal（常规）/ 100-500-900}   在css规范中，字体粗细，分为9个等级，分为100-900；其中100对应最轻字体变形，而900对应最重字体变形，500规范字体；600-900加粗字体。<br>  ● 倾斜：{font-style：italic（倾斜度小）/ oblique（倾斜度大）/ normal（取消倾斜，常规显示）}<br>  ● 水平对齐方式：{text-align：left / right / center / justify(两端对齐对中文不起作用)}<br>  ● 垂直对齐方式：{vertical-align：top / bottom / middle}<br>  ● 行高：{line-height：normal/value}<br>文字属性的简写：（顺序）font-style \ font-variant \ font-weight \ font-size \ line-height \ font-family<br>  ● 文本修饰：text-decoration：none / underline(添加下划线) / overline(添加上划线) / line-through(添加删除线) / blink (闪烁)<br>  ● 首行缩进：{text-indent：value} value可取负值；该属性只对第一行起作用<br>  ● 字间距：{letter-spacing：value} 控制英文/汉字的字距<br>  ● 词间距：{word-spacing：value} 控制英文单词之间的距离<br>  ● 文体流控制：{layout-flow：vertical-ideographic 自上而下 / horizontal自左向右} 只支持IE浏览器<br>二、关于列表的css声明</p>
 <ol>
 <li>定义列表符号的样式：list-style-type：disc（实心圆）/ circle（空心圆）/ square（实心方块）/ none</li>
 <li>使用图片作为列表符号：list-style-image：url(目标图片)</li>
@@ -242,15 +241,15 @@
     <div id="share-footer" style="display: none">
       <ul>
   <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/2017/06/11/hello-world2/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://twitter.com/share?url=http://yoursite.com/2017/06/11/hello-world2/&text=数组常用方法2"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/2017/06/11/hello-world2/&title=数组常用方法2"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/2017/06/11/hello-world2/&is_video=false&description=数组常用方法2"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=数组常用方法2&body=Check out this article: http://yoursite.com/2017/06/11/hello-world2/"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://getpocket.com/save?url=http://yoursite.com/2017/06/11/hello-world2/&title=数组常用方法2"><i class="fa fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://reddit.com/submit?url=http://yoursite.com/2017/06/11/hello-world2/&title=数组常用方法2"><i class="fa fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/2017/06/11/hello-world2/&title=数组常用方法2"><i class="fa fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://digg.com/submit?url=http://yoursite.com/2017/06/11/hello-world2/&title=数组常用方法2"><i class="fa fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://yoursite.com/2017/06/11/hello-world2/&name=数组常用方法2&description="><i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://yoursite.com/2017/06/11/hello-world2/&text=CSS基本知识"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/2017/06/11/hello-world2/&title=CSS基本知识"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/2017/06/11/hello-world2/&is_video=false&description=CSS基本知识"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=CSS基本知识&body=Check out this article: http://yoursite.com/2017/06/11/hello-world2/"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://yoursite.com/2017/06/11/hello-world2/&title=CSS基本知识"><i class="fa fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://yoursite.com/2017/06/11/hello-world2/&title=CSS基本知识"><i class="fa fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/2017/06/11/hello-world2/&title=CSS基本知识"><i class="fa fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://yoursite.com/2017/06/11/hello-world2/&title=CSS基本知识"><i class="fa fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://yoursite.com/2017/06/11/hello-world2/&name=CSS基本知识&description="><i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
