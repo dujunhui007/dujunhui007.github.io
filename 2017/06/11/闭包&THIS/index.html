@@ -12,7 +12,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/06/11/闭包&THIS/index.html">
 <meta property="og:site_name" content="听话，叫叔叔！">
 <meta property="og:description" content="严格意义上的闭包,严格闭包通过栈内存不销毁,保护内部变量,而且下一级作用域可以访问内部变量 更严格意义上的闭包,函数可以在父函数外面调用父函数作用域的值 在函数执行的时候,函数体中有返回值,函数执行的作用域不销毁 调用了上一级栈内存的变量,并返回给函数外,造成了上一级作用域不销毁(栈内存) 缺点 会造成很多不销毁的栈内存,影响浏览器的性能   优点 保护内部变量不被外界所污染,内部变量也不污染外">
-<meta property="og:updated_time" content="2017-06-11T12:29:21.952Z">
+<meta property="og:updated_time" content="2017-06-11T12:32:47.499Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="闭包&amp;THIS">
 <meta name="twitter:description" content="严格意义上的闭包,严格闭包通过栈内存不销毁,保护内部变量,而且下一级作用域可以访问内部变量 更严格意义上的闭包,函数可以在父函数外面调用父函数作用域的值 在函数执行的时候,函数体中有返回值,函数执行的作用域不销毁 调用了上一级栈内存的变量,并返回给函数外,造成了上一级作用域不销毁(栈内存) 缺点 会造成很多不销毁的栈内存,影响浏览器的性能   优点 保护内部变量不被外界所污染,内部变量也不污染外">
@@ -104,7 +104,7 @@
         <li><a class="icon" href="/2017/06/11/逻辑与与或&arguments/"><i class="fa fa-chevron-left" aria-hidden="true" onmouseover='$("#i-prev").toggle();' onmouseout='$("#i-prev").toggle();'></i></a></li>
         
         
-        <li><a class="icon" href="/2017/06/11/模板/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover='$("#i-next").toggle();' onmouseout='$("#i-next").toggle();'></i></a></li>
+        <li><a class="icon" href="/2017/06/11/git操作/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover='$("#i-next").toggle();' onmouseout='$("#i-next").toggle();'></i></a></li>
         
         <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover='$("#i-top").toggle();' onmouseout='$("#i-top").toggle();'></i></a></li>
         <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover='$("#i-share").toggle();' onmouseout='$("#i-share").toggle();' onclick='$("#share").toggle();return false;'></i></a></li>
@@ -131,7 +131,7 @@
 
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#二-this"><span class="toc-number">1.</span> <span class="toc-text">二. this</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三-小知识点"><span class="toc-number">2.</span> <span class="toc-text">三. 小知识点</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#this"><span class="toc-number">1.</span> <span class="toc-text">this</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#小知识点"><span class="toc-number">2.</span> <span class="toc-text">小知识点</span></a></li></ol>
     </div>
   </span>
 </div>
@@ -154,7 +154,7 @@
       </span>
       
     <div class="postdate">
-        <time datetime="2017-06-11T12:29:21.951Z" itemprop="datePublished">2017-06-11</time>
+        <time datetime="2017-06-11T12:32:47.498Z" itemprop="datePublished">2017-06-11</time>
     </div>
 
 
@@ -189,7 +189,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="二-this"><a href="#二-this" class="headerlink" title="二. this"></a>二. this</h2><ul>
+<h2 id="this"><a href="#this" class="headerlink" title="this"></a>this</h2><ul>
 <li>this跟在哪的栈内存中执行的,跟那个堆内存中定义的,跟原型链,跟预解释一点关系都没有<ul>
 <li>函数执行的时候,看函数前面有没有. 点前面是谁,this就是谁(调用对象),没有点就是window</li>
 <li>自执行函数中的this永远是window</li>
@@ -198,7 +198,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="三-小知识点"><a href="#三-小知识点" class="headerlink" title="三. 小知识点"></a>三. 小知识点</h2><ul>
+<h2 id="小知识点"><a href="#小知识点" class="headerlink" title="小知识点"></a>小知识点</h2><ul>
 <li>检测属性是否在对象中<ul>
 <li>“属性名” in 对象返回布尔值</li>
 </ul>
@@ -230,7 +230,7 @@
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#二-this"><span class="toc-number">1.</span> <span class="toc-text">二. this</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三-小知识点"><span class="toc-number">2.</span> <span class="toc-text">三. 小知识点</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#this"><span class="toc-number">1.</span> <span class="toc-text">this</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#小知识点"><span class="toc-number">2.</span> <span class="toc-text">小知识点</span></a></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">

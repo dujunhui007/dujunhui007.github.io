@@ -12,7 +12,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/06/11/git操作/index.html">
 <meta property="og:site_name" content="听话，叫叔叔！">
 <meta property="og:description" content="git add . 把所有在工作区新添加的或新修改的文件添加到暂存区   git commit -am “注释内容” 从暂存区提交到历史区,并且添加注释给所有文件   git status 查看当前工作区下的状态   git clone 网站的路径 将网站上的代码克隆到本地(github和coding)     git config –global user.name “” 配置用户名,不加””">
-<meta property="og:updated_time" content="2017-06-11T12:27:38.358Z">
+<meta property="og:updated_time" content="2017-06-11T12:32:47.450Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git操作">
 <meta name="twitter:description" content="git add . 把所有在工作区新添加的或新修改的文件添加到暂存区   git commit -am “注释内容” 从暂存区提交到历史区,并且添加注释给所有文件   git status 查看当前工作区下的状态   git clone 网站的路径 将网站上的代码克隆到本地(github和coding)     git config –global user.name “” 配置用户名,不加””">
@@ -101,10 +101,10 @@
     <span id="actions">
       <ul>
         
-        <li><a class="icon" href="/2017/06/11/模板/"><i class="fa fa-chevron-left" aria-hidden="true" onmouseover='$("#i-prev").toggle();' onmouseout='$("#i-prev").toggle();'></i></a></li>
+        <li><a class="icon" href="/2017/06/11/闭包&THIS/"><i class="fa fa-chevron-left" aria-hidden="true" onmouseover='$("#i-prev").toggle();' onmouseout='$("#i-prev").toggle();'></i></a></li>
         
         
-        <li><a class="icon" href="/2017/06/11/CSS基本知识/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover='$("#i-next").toggle();' onmouseout='$("#i-next").toggle();'></i></a></li>
+        <li><a class="icon" href="/2017/06/11/模板/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover='$("#i-next").toggle();' onmouseout='$("#i-next").toggle();'></i></a></li>
         
         <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover='$("#i-top").toggle();' onmouseout='$("#i-top").toggle();'></i></a></li>
         <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover='$("#i-share").toggle();' onmouseout='$("#i-share").toggle();' onclick='$("#share").toggle();return false;'></i></a></li>
@@ -131,7 +131,7 @@
 
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#二-作用域"><span class="toc-number">1.</span> <span class="toc-text">二. 作用域</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三-预解释"><span class="toc-number">2.</span> <span class="toc-text">三. 预解释</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#作用域"><span class="toc-number">1.</span> <span class="toc-text">作用域</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#预解释"><span class="toc-number">2.</span> <span class="toc-text">预解释</span></a></li></ol>
     </div>
   </span>
 </div>
@@ -154,7 +154,7 @@
       </span>
       
     <div class="postdate">
-        <time datetime="2017-06-11T12:27:38.345Z" itemprop="datePublished">2017-06-11</time>
+        <time datetime="2017-06-11T12:32:47.449Z" itemprop="datePublished">2017-06-11</time>
     </div>
 
 
@@ -200,7 +200,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="二-作用域"><a href="#二-作用域" class="headerlink" title="二. 作用域"></a>二. 作用域</h2><ul>
+<h2 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h2><ul>
 <li><p>堆内存</p>
 <ul>
 <li>只是存放代码</li>
@@ -238,7 +238,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="三-预解释"><a href="#三-预解释" class="headerlink" title="三. 预解释"></a>三. 预解释</h2><ul>
+<h2 id="预解释"><a href="#预解释" class="headerlink" title="预解释"></a>预解释</h2><ul>
 <li>预解释阶段发生在创建了堆内存,让代码执行之前,对当前作用域中带var和function的进行预解释<ul>
 <li>在浏览器解析执行代码的时候,会提前把带var和function的代码声明或定义,提前放在作用域的最前面执行,也就是浏览器把对这些变量的声明提升到作用域的最前面</li>
 <li>函数数据类型会在预解释阶段同时声明和定义<ul>
@@ -303,7 +303,7 @@
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#二-作用域"><span class="toc-number">1.</span> <span class="toc-text">二. 作用域</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三-预解释"><span class="toc-number">2.</span> <span class="toc-text">三. 预解释</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#作用域"><span class="toc-number">1.</span> <span class="toc-text">作用域</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#预解释"><span class="toc-number">2.</span> <span class="toc-text">预解释</span></a></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">
