@@ -14,7 +14,7 @@
 <meta property="og:description" content="预解释和闭包 数据类型:基本数据类型和引用数据类型的本质区别,数据类型检测 预解释:变量声明提升,函数声明和定义提升,在当前作用域中,JS代码从上到下执行之前,浏览器会把所有带var/function关键字的进行提前声明或者定义 var和function有区别 作为值是不进行预解释的,return,function…,var fn=function(){}… 匿名函数不进行预解释: (functi">
 <meta property="og:image" content="http://note.youdao.com/yws/public/resource/282d0a3e262b821e21367f4edd8982f6/xmlnote/4353C790A2D24D9F84C002A75F39E9A4/5262">
 <meta property="og:image" content="http://note.youdao.com/yws/public/resource/282d0a3e262b821e21367f4edd8982f6/xmlnote/901A6CA333AA43EAA84CDD3AEFBE4FBB/5204">
-<meta property="og:updated_time" content="2017-06-11T12:38:38.983Z">
+<meta property="og:updated_time" content="2017-06-11T12:41:44.949Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="预解释&amp;闭包&amp;THIS&amp;面向对象">
 <meta name="twitter:description" content="预解释和闭包 数据类型:基本数据类型和引用数据类型的本质区别,数据类型检测 预解释:变量声明提升,函数声明和定义提升,在当前作用域中,JS代码从上到下执行之前,浏览器会把所有带var/function关键字的进行提前声明或者定义 var和function有区别 作为值是不进行预解释的,return,function…,var fn=function(){}… 匿名函数不进行预解释: (functi">
@@ -132,7 +132,7 @@
 
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#预解释和闭包"><span class="toc-number">1.</span> <span class="toc-text">预解释和闭包</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#this"><span class="toc-number">2.</span> <span class="toc-text">this</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#面向对象-OOP-Object-Oriennted-Programming"><span class="toc-number">3.</span> <span class="toc-text">面向对象(OOP: Object Oriennted Programming)</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#预解释和闭包"><span class="toc-number">1.</span> <span class="toc-text">预解释和闭包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#this"><span class="toc-number">2.</span> <span class="toc-text">this</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#面向对象-OOP-Object-Oriennted-Programming"><span class="toc-number">3.</span> <span class="toc-text">面向对象(OOP: Object Oriennted Programming)</span></a></li></ol>
     </div>
   </span>
 </div>
@@ -155,7 +155,7 @@
       </span>
       
     <div class="postdate">
-        <time datetime="2017-06-11T12:38:38.983Z" itemprop="datePublished">2017-06-11</time>
+        <time datetime="2017-06-11T12:41:44.948Z" itemprop="datePublished">2017-06-11</time>
     </div>
 
 
@@ -166,7 +166,7 @@
   
 
   <div class="content" itemprop="articleBody">
-    <h2 id="预解释和闭包"><a href="#预解释和闭包" class="headerlink" title="预解释和闭包"></a>预解释和闭包</h2><ul>
+    <h3 id="预解释和闭包"><a href="#预解释和闭包" class="headerlink" title="预解释和闭包"></a>预解释和闭包</h3><ul>
 <li>数据类型:基本数据类型和引用数据类型的本质区别,数据类型检测</li>
 <li>预解释:变量声明提升,函数声明和定义提升,在当前作用域中,JS代码从上到下执行之前,浏览器会把所有带var/function关键字的进行提前声明或者定义<ul>
 <li>var和function有区别</li>
@@ -197,7 +197,7 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params">a,b</span>)</span>&#123;</div><div class="line">    <span class="comment">//-&gt;为形参设置默认值,如果没有传递值的话,让默认值都为零(以下两种方式都可以,第一种严谨,第二种简单)</span></div><div class="line">    <span class="keyword">if</span>(<span class="keyword">typeof</span> a===<span class="string">"undefined"</span>)&#123;</div><div class="line">        a=<span class="number">0</span>;</div><div class="line">    &#125;</div><div class="line">    b=b||<span class="number">0</span>;</div><div class="line">    <span class="built_in">console</span>.log(a+b);</div><div class="line">&#125;</div><div class="line">fn(<span class="number">10</span>);</div></pre></td></tr></table></figure>
 </li>
 <li><p>匿名函数:函数表达式,自执行函数</p>
-<h2 id="this"><a href="#this" class="headerlink" title="this"></a>this</h2></li>
+<h3 id="this"><a href="#this" class="headerlink" title="this"></a>this</h3></li>
 </ul>
 </li>
 <li>this<ul>
@@ -211,14 +211,14 @@
 <li>apply:和call作用一样,只不过传递给函数的参数是放在一个数组中传递进去的,但是也相当于在一个个的给函数赋值</li>
 <li>bind:预先把this指向改变,但是函数并没有执行,属于预处理范畴(柯理化函数思想),在IE低版本浏览器中不兼容</li>
 <li>call(null/undefined/不传参):在非严格模式下this都指向window,严格模式下,写的是谁this就是谁,不写this是undefined</li>
-<li>一些需要特殊记忆的<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">setTimeout(<span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="comment">//this:window</span></div><div class="line">&#125;,<span class="number">1000</span>);</div><div class="line">ary.sort(<span class="function"><span class="keyword">function</span>(<span class="params">a,b</span>)</span>&#123;</div><div class="line">    <span class="comment">//this:window</span></div><div class="line">    <span class="keyword">return</span> a-b</div><div class="line">&#125;);</div><div class="line">ary.forEach(<span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="comment">//this:window</span></div><div class="line">&#125;)</div><div class="line">ary.forEach(<span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="comment">//this:obj 数组中的方法,forEach/map第二个参数传递的是啥,相当于让匿名函数中的this指向啥,但是sort方法没有这个机制</span></div><div class="line">&#125;,,obj)</div></pre></td></tr></table></figure>
+<li>一些需要特殊记忆的<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">setTimeout(<span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="comment">//this:window</span></div><div class="line">&#125;,<span class="number">1000</span>);</div><div class="line">ary.sort(<span class="function"><span class="keyword">function</span>(<span class="params">a,b</span>)</span>&#123;</div><div class="line">    <span class="comment">//this:window</span></div><div class="line">    <span class="keyword">return</span> a-b</div><div class="line">&#125;);</div><div class="line">ary.forEach(<span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="comment">//this:window</span></div><div class="line">&#125;)</div><div class="line">ary.forEach(<span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="comment">//this:obj 数组中的方法,forEach/map第二个参数传递的是啥,相当于让匿名函数中的this指向啥,但是sort方法没有这个机制</span></div><div class="line">&#125;,obj)</div></pre></td></tr></table></figure>
 </li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
-<h2 id="面向对象-OOP-Object-Oriennted-Programming"><a href="#面向对象-OOP-Object-Oriennted-Programming" class="headerlink" title="面向对象(OOP: Object Oriennted Programming)"></a>面向对象(OOP: Object Oriennted Programming)</h2><blockquote>
+<h3 id="面向对象-OOP-Object-Oriennted-Programming"><a href="#面向对象-OOP-Object-Oriennted-Programming" class="headerlink" title="面向对象(OOP: Object Oriennted Programming)"></a>面向对象(OOP: Object Oriennted Programming)</h3><blockquote>
 <p>你是如何理解编程语言中的面向对象?</p>
 <p>我们研究JS和使用JS编程本身就是基于面向对象的思想来开发的,JS中的一切内容都可以统称为要研究的”对象”,我们按照功能特点把所有内容划分成”几个大类,还可以基于大类划分小类”,我们开发研究的时候拿出类中的一个具体的事物”类的实例”来操作,当前实例具备的一些特点,同属于当前类的其他实例也具备这些特点:我们还要研究关于类的”封装,继承,多态”,这样有助于我们的编程开发</p>
 </blockquote>
@@ -306,7 +306,7 @@
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#预解释和闭包"><span class="toc-number">1.</span> <span class="toc-text">预解释和闭包</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#this"><span class="toc-number">2.</span> <span class="toc-text">this</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#面向对象-OOP-Object-Oriennted-Programming"><span class="toc-number">3.</span> <span class="toc-text">面向对象(OOP: Object Oriennted Programming)</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#预解释和闭包"><span class="toc-number">1.</span> <span class="toc-text">预解释和闭包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#this"><span class="toc-number">2.</span> <span class="toc-text">this</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#面向对象-OOP-Object-Oriennted-Programming"><span class="toc-number">3.</span> <span class="toc-text">面向对象(OOP: Object Oriennted Programming)</span></a></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">
