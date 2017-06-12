@@ -1,22 +1,266 @@
-doctype html
-html
-	include partial/head.jade
-	body
+<!DOCTYPE HTML>
+<html class="no-js" lang="zh-CN">
+<!--
+//                            _ooOoo_
+//                           o8888888o
+//                           88" . "88
+//                           (| -_- |)
+//                            O\ = /O
+//                        ____/`---'\____
+//                      .   ' \\| |// `.
+//                       / \\||| : |||// \
+//                     / _||||| -:- |||||- \
+//                       | | \\\ - /// | |
+//                     | \_| ''\---/'' | |
+//                      \ .-\__ `-` ___/-. /
+//                   ___`. .' /--.--\ `. . __
+//                ."" '< `.___\_<|>_/___.' >'"".
+//               | | : `- \`.;`\ _ /`;.`/ - ` : | |
+//                 \ \ `-. \_ __\ /__ _/ .-` / /
+//         ======`-.____`-.___\_____/___.-`____.-'======
+//                            `=---='
+//                 拦截插件累计拦截逗比攻击"1381438"次！
+//         .............................................
+//                  佛祖保佑             永无BUG
+//          佛曰:
+//                  写字楼里写字间，写字间里程序员；
+//                  程序人员写程序，又拿程序换酒钱。
+//                  酒醒只在网上坐，酒醉还来网下眠；
+//                  酒醉酒醒日复日，网上网下年复年。
+//                  但愿老死电脑间，不愿鞠躬老板前；
+//                  奔驰宝马贵者趣，公交自行程序员。
+//                  别人笑我忒疯癫，我笑自己命太贱；
+//                  不见满街漂亮妹，哪个归得程序员？
+-->
+<head>
+    <!--[if lte IE 9]>
+<meta http-equiv="refresh" content="0;url=http://yoursite.com/warn.html">
+<![endif]-->
+<meta charset="utf-8">
 
-		#postContainer
-			#postTop
-				h4#logo #{theme.logo}
-				br
-				br
-				h2#postTitle #{page.title}
-				br
-				span.postTime(class='fa fa-calendar' aria-hidden='true') #{date(page.date['_i'],'YYYY-M-D')}
-				each tag in page.tags.data
-					span.postTags(class='fa fa-tags'  aria-hidden='true') &nbsp;#{tag.name}
-				br
-				br
-			-str = markdown(page.content)
-			section#articleDiv!= str
-		script(src='/js/jquery.min.js')
-		script(src='/js/highlight.min.js')
-		script(src='/js/start.js')
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+<meta http-equiv="mobile-agent" content="format=html5; url=http://yoursite.com">
+<meta name="author" content="John Doe">
+<link rel="stylesheet" href="/css/SimpleStyle.min.css">
+
+<link rel="shortcut icon" href="/images/favicon.png">
+
+
+<title>css基本知识 - 听话，叫叔叔！</title>
+
+<meta name="keywords" content="undefined">
+
+<meta name="description " content="null">
+</head>
+<body>
+<div id="nav">
+    <nav class="nav-menu">
+        <a class="site-name current" href="/" title="说">说</a>
+        <a class="site-index current" href="/"><i class="fa fa-home"></i><span>首页</span></a>
+        <a href="/archives" title="归档"><i class="fa fa-archives"></i><span>归档</span></a>
+        <a href="/tags" title="标签"><i class="fa fa-tags"></i><span>标签</span></a>
+        <a href="/video" title="视频资源"><i class="fa fa-video-camera"></i><span>视频资源</span></a>
+        <a href="/rss" title="RSS Feed"><i class="fa fa-rss"></i><span>RSS Feed</span></a>
+        <a href="/help" title="帮助中心"><i class="fa fa-question-circle"></i><span>帮助中心</span></a>
+    </nav>
+</div>
+<div class="nav-user">
+    <a class="btn-search" href="#"><i class="fa fa-search"></i></a>
+    <a class="btn-read-mode" href="#"><i class="fa fa-sun-o"></i></a>
+    <a class="btn-weixin-mp" href="javascript:"><i class="fa fa-weixin"></i></a>
+</div>
+<div id="wrapper" class="clearfix">
+    <div id="body">
+        <div class="main" id="main">
+            <div id="cover">
+    <div class="cover-img"></div>
+    <div class="cover-info">
+        <img class="avatar" width="72" src="/images/favicon.png" alt="avatar" />
+        <h1>说IT</h1>
+        <h3>交流技术，畅谈人文</h3>
+        <p>一个关注技术与人文的IT博客</p>
+        <div class="cover-sns">
+            <div class="btn btn-weixin">
+                <a class="" href="javascript:"><i class="fa fa-weixin"></i></a>
+                <div class="qrcode"><img src="/images/weixin-qrcode.png" alt="weixinQrcode" /></div>
+                <div class="qrcode-arrow"></div>
+            </div>
+            <div class="btn btn-weibo">
+                <a href="https://weibo.com/tangkunyin" target="_blank" rel="nofollow"><i class="fa fa-weibo"></i></a>
+            </div>
+            <div class="btn btn-facebook">
+                <a href="https://facebook.com/tangkunyin"  target="_blank" rel="nofollow"><i class="fa fa-facebook"></i></a>
+            </div>
+            <div class="btn btn-github">
+                <a href="https://github.com/tangkunyin"  target="_blank" rel="nofollow"><i class="fa fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="page-title">
+    <ul>
+        <li><a href="/">最新</a></li>
+        
+        
+        
+        <li class="page-search">
+    <form id="search" class="search-form">
+        <label for="s" class="sr-only">请输入关键字</label>
+        <input class="search-field" type="text" name="s" class="text" placeholder="请输入关键字" />
+        <button type="submit" class="search-form-submit" title="搜索"><i class="fa fa-search"></i></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="请输入关键词..."/>
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(无标题)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+</li>
+
+    </ul>
+</div>
+<div class="main-inner">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="post-header">
+            <div class="post-author clearfix">
+                <a class="avatar fleft" href="undefined" target="_blank">
+                    <img width="48" src="undefined" alt="avatar"/>
+                </a>
+                <p><span class="label">作者</span>
+                    <a href="undefined" target="_blank">undefined</a>
+                    <span title="最后编辑于2017-06-11">2017-06-11</span>
+                </p>
+                <p>undefined</p>
+            </div>
+            <h2 class="post-title">CSS基本知识</h2>
+            <div class="post-meta">
+                本文总共4960个字 | 您是第<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>位看到它们的小伙伴
+            </div>
+        </div>
+        <div class="post-content markdown-body">
+            <p>css选择符（选择器）<br>选择符表示要定义样式的对象，可以是元素本身，也可是一类元素或制定名称的元素<br>在css选择符中，大致可有10种：类选择符、id选择符、class选择符、通配符、群组选择符、包含选择符、伪类选择符、伪对象选择符……<br>关于选择符的权重问题，css中用四位数来表示权重，权重的表达式如0000<br>  ● 类型选择符的权重为 0001<br>  ● class选择符的权重为 0010<br>  ● id选择符的权重为 0100<br>  ● 子选择符的权重为 0010<br>  ● 属性选择符的权重为 0010<br>  ● 伪类选择符的权重为 0010<br>  ● 伪元素选择符的权重为 0010<br>  ● 包含选择符的权重为 ：为包含选择符的权重之和<br>  ● 内联样式的权重为 1000<br>  ● 继承样式的权重为 0000<br>在这里特别要注意的就是关于a标签的伪类选择-在使用a标签的伪类时，不可以打乱顺序<br>a:link{属性：属性值} 超链接初始化的状态<br>a:visited{属性：属性值} 超链接被访问后的状态<br>a:hover{属性：属性值} 鼠标悬停，即鼠标划过超链接时的状态<br>a:active{属性：属性值} 超链接被激活时的状态，即鼠标按下时它的状态<br>注意：联合使用的时候，样式的顺序是不能改变的link、visited、hover、active。顺序错误则超链接样式失败。<br>css核心属性<br>一、关于文本的css声明<br>  ● 文本大小：{font-size：value}<br>属性值为数值型，单位有几种常见的pt、rem、em、px（9p t= 12px \ 1em = 16px ）<br>也可以使用绝对大小关键字<br>xx-small ： 9px<br>x-small ：11px<br>small：13px<br>medium：16px<br>large：19px<br>x-large：23px<br>xx-large：27px<br>  ● 文本颜色：{color：颜色值}<br>  ● 文本字体：{font-family：“字体”}<br>  ● 字体加粗：{font-weight：bold（加粗的）/bolder（更粗的）/ normal（常规）/ 100-500-900}   在css规范中，字体粗细，分为9个等级，分为100-900；其中100对应最轻字体变形，而900对应最重字体变形，500规范字体；600-900加粗字体。<br>  ● 倾斜：{font-style：italic（倾斜度小）/ oblique（倾斜度大）/ normal（取消倾斜，常规显示）}<br>  ● 水平对齐方式：{text-align：left / right / center / justify(两端对齐对中文不起作用)}<br>  ● 垂直对齐方式：{vertical-align：top / bottom / middle}<br>  ● 行高：{line-height：normal/value}<br>文字属性的简写：（顺序）font-style \ font-variant \ font-weight \ font-size \ line-height \ font-family<br>  ● 文本修饰：text-decoration：none / underline(添加下划线) / overline(添加上划线) / line-through(添加删除线) / blink (闪烁)<br>  ● 首行缩进：{text-indent：value} value可取负值；该属性只对第一行起作用<br>  ● 字间距：{letter-spacing：value} 控制英文/汉字的字距<br>  ● 词间距：{word-spacing：value} 控制英文单词之间的距离<br>  ● 文体流控制：{layout-flow：vertical-ideographic 自上而下 / horizontal自左向右} 只支持IE浏览器<br>二、关于列表的css声明</p>
+<ol>
+<li>定义列表符号的样式：list-style-type：disc（实心圆）/ circle（空心圆）/ square（实心方块）/ none</li>
+<li>使用图片作为列表符号：list-style-image：url(目标图片)</li>
+<li>定义列表符号的位置：list-style-position：outside（外边）/ inside（里边）<br>三、关于背景的css声明（边框）</li>
+<li>背景颜色 ： background-color：颜色值</li>
+<li>背景图片的设置：background-image：url()</li>
+<li>背景图片平铺属性：background-repeat：no-repeat / repeat / repeat-x / repeat-y</li>
+<li>背景图的固定：background-attachment：scroll 滚动 / fixed（固定）</li>
+<li>背景图的位置：background-position：left / center / right / 数值   top/center/bottom/数值</li>
+<li>边框：border：线型（solid实线/dashed虚线/dotted点线/double双线） 粗细（value） 颜色<br>右边框：border-right / 左边框：border-left / 上边框：border-top / 下边框：border-bottom<br>四、文本溢出<br>overflow（overflow-x / overflow-y）：visible 默认值 / hidden（隐藏，内容会被修剪其他内容不可见）/ scroll / auto / inherit<br>scroll - 里面没有内容时，也会显示内容<br>auto - 有内容溢出才会出项滚动条<br>inherit - 规定应该从父元素中继承 overflow属性（一般不使用）<br>文本溢出<br>text-overflow：clip / ellipsis<br>clip：不显示省略号（…）而是简单的裁切<br>ellipsis：当对象内文本溢出时，显示省略标记<br>五、空余空间<br>white-space：normal / pre / nowrap / pre-wrap / pre-line / inherit<br>normal ：默认值<br>pre：空白会被浏览器保留，其行为方式类似HTML中的pre标签<br>nowrap：文本不会换行，文本会在同一行上继续，知道遇到<br>标签为止<br>pre-wrap：保留空白符序列，但是正常的进行换行<br>pre-line：合并空白符序列，但是保留换行符<br>inherit：IE浏览器不支持此属性，从父元素继承whit-space</li>
+</ol>
+<p>要让文本显示省略号：</p>
+<ol>
+<li>容器宽度：width:value;</li>
+<li>强制文本在一行显示，white-space:nowrap;</li>
+<li>溢出内容被隐藏overflow：hidden;</li>
+<li>溢出文本显示省略号：text-overflow:ellispsis<br>多行显示省略：</li>
+<li>width:value;</li>
+<li>over-flow:hidden;</li>
+<li>text-overflow:ellipsis;</li>
+<li>word-break:break-all;</li>
+<li>display:-webkit-box !important;</li>
+<li>-webkit-box-orient:vertical;</li>
+<li>-webkit-line-clamp:value(设置多少行显示)<br>六、浮动属性<br>float：none / left / right<br>七、盒模型<br>外边距，边框，内边距，内容区组成<br>外边距：margin / margin-left / margin-right /margin-bottom / margin-top<br>margin属性在上下情况下，取最大一个值，谁大取谁（左右无异）<br>margin第一级会把margin-top传给上一级，这个是要注意的。<br>内边距：padding / padding-left /padding-right<br>八、元素类型的转换<br>盒子模型可通过display属性来改变默认的像是类型<br>display:18个属性值  该属性设置或检索对象元素应该生成的盒模型的类型；<br>常用的：block（块元素） / inline（内联元素） / inline-block（行内块元素） / none / list-item / table-header-group / table-footer-group ….<br>九、position定位属性，检索对象方法：<br>position:static / absolute /  relative / fixed<br>static：默认值无特定定位；<br>absolute：绝对定位，将对象从文档中拖离出来，受用left / right / top / bottom等属性，相对其最接近的一个并没有定位设置的元素进行绝对定位，如不存在这样的父对象，则依据body对象，而其层叠通过z-index属性定义；<br>relative：相对定位，对象不可叠，在文档流偏移位置（占文档流）<br>fixed：对象定位遵从定位方式（absolute）但要遵守一些规范，参照整个屏幕，低版本的浏览器不支持</li>
+</ol>
+<p>CSS Bug 、CSS Hack 、 Filter<br>在学习的过程，我总结了一些，css的一些bug，首先我先在这里介绍一下什么为css bug，css hack，filter</p>
+<ol>
+<li>CSS Bug：css样式在各浏览器中解析不一致的情况，不能正确显示问题称为css bug</li>
+<li>CSS Hack：css中，Hack是指一种兼容css在不同浏览器中正确显示的技巧方法，因为它们都属于个人对css代码的非官方的修改或者非官方的补丁，有些人更喜欢使用path（补丁）来描述这行为</li>
+<li>Filter：表示过滤的意思，它是一种对特定浏览器或组显示或隐藏规则或声明的方法，用来过滤不同浏览器的Hack类型，使用Hack带来副作用，降低css代码的可读性。增加代码的负担</li>
+<li>设置css和hack和filter有两种方法：一是利用浏览器自身的bug，来隐藏或显示样式或声明，利用浏览器对css支持的不完善，如对某些规则或语法还没有形成支持来隐藏或显示样式<br>在这里，我总结了一些常见的IE6的css解析bug以及hack</li>
+<li>图片间隙（把img元素转为块状元素）</li>
+<li>双倍浮向（双倍边距）这是最常见的一个bug，当IE6-浏览器在解析浮动元素时，会错误地吧浮向边界加倍显示 （解决方法：给浮动元素添加display：inline；就是把元素设为内联元素）</li>
+<li>在IE6-以下版本中，部分块元素拥有默认高度（低于18px）-解决方法，给元素添加声明 font-size：0；overflow：hidden；height：0；</li>
+<li>表单元素行高不一致；给表单元素设置为float</li>
+<li>在img放入a里面，可给img去除边框，img在a里，在IE浏览器时会有一个边框，就要去除border：0；</li>
+<li>按钮元素默认大小以及样式不一致 - 解决方式：hack1：统一大小以及样式；hack2：input外套一个标签，在这个标签里写按钮的样式，吧input的边框去除；hack3：如果这个按钮是一个图片，直接把图片作为按钮的背景图即可</li>
+<li>百分比：在IE6以下版本中解析百分比，会按四舍方式计算从而导致50%加50%大于100%的情况</li>
+<li>高度塌陷，设置float浮动之后，会造成一个高度塌陷问题，float的bug还是比较多的，解决方式，在浮动元素最后，添加一个空的div标签，然后给这个空标签添加clear：bot和；清除浮动即可，但是这个方式还是比较麻烦，所以，清楚浮动，就在浮动元素的父元素中添加一个伪类after<br>[html] view plain copy</li>
+</ol>
+<pre><code>a. div:after{conten:&quot;&quot;;display:blcok;clear:both;visibity:hidden;height:0;overflow:hidden;}  
+</code></pre><ol>
+<li>鼠标指针bug cursor属性的hard属性值只有IE浏览器识别，其他浏览器不是别，cursor中pointer属性值IE6+以及其他内核浏览器都可以识别，统一某元素鼠标指针形式为手型添加cursor：pointer；</li>
+<li>透明属性，IE浏览器写法：filter：alpha（opcity=value1-100）</li>
+</ol>
+
+        </div>
+        <div class="post-tool">
+            <a class="btn-weixin-mp" href="javascript:void(0);" data-cid="52" title="95">
+                <i class="fa fa-mobile" aria-hidden="true"></i> 打包
+            </a>
+        </div>
+        
+        <div class="post-tags">标签：
+            
+        </div>
+        
+    </article>
+    
+</div>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+        </div><!-- end #main-->
+    </div><!-- end #body -->
+    <footer class="footer">
+    <div class="footer-inner">
+        <p>
+            <a href="/about"  title="关于本站">关于本站</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <a href="/help" title="帮助中心" >帮助中心</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <a href="/video" title="视频资源">视频资源</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <!-- 自定义链接 -->
+            <a href="/links" title="友情链接">友情链接</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <a href="/app" title="App下载">App下载</a>
+        </p>
+        <p>
+            本站点采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>，已建立<a href="/timeline" id="siteBuildingTime"></a>天<br/>
+            ©2017 基于<a href="http://hexo.io" target="_blank">Hexo</a>搭建
+            ，主题&nbsp<a href="https://github.com/tangkunyin/hexo-theme-jsimple" target="_blank">JSimple</a>
+            ，作者<a href="https://www.tangkunyin" target="_blank">唐先森</a>
+            ，感谢<a href="https://coding.net/register?key=bcace447-fa41-4579-9783-86fdf0f723e2" target="_blank">Coding</a>提供免费优质的强力驱动
+        </p>
+        
+    </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+<script src="/js/InsightSearch.js"></script>
+<script src="/js/SimpleCore.js"></script>
+</div>
+<div class="fixed-btn">
+    <a class="btn-gotop" href="javascript:"> <i class="fa fa-angle-up"></i></a>
+</div>
+<script>
+    $(function () {
+        SimpleCore.init({
+            buildingTime: '08/20/2014',
+            current: $('.post-tags').length > 0 ? 'post' : 'archive',
+            customImg: '/images/weixin-mp.png'
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,22 +1,332 @@
-doctype html
-html
-	include partial/head.jade
-	body
+<!DOCTYPE HTML>
+<html class="no-js" lang="zh-CN">
+<!--
+//                            _ooOoo_
+//                           o8888888o
+//                           88" . "88
+//                           (| -_- |)
+//                            O\ = /O
+//                        ____/`---'\____
+//                      .   ' \\| |// `.
+//                       / \\||| : |||// \
+//                     / _||||| -:- |||||- \
+//                       | | \\\ - /// | |
+//                     | \_| ''\---/'' | |
+//                      \ .-\__ `-` ___/-. /
+//                   ___`. .' /--.--\ `. . __
+//                ."" '< `.___\_<|>_/___.' >'"".
+//               | | : `- \`.;`\ _ /`;.`/ - ` : | |
+//                 \ \ `-. \_ __\ /__ _/ .-` / /
+//         ======`-.____`-.___\_____/___.-`____.-'======
+//                            `=---='
+//                 拦截插件累计拦截逗比攻击"1381438"次！
+//         .............................................
+//                  佛祖保佑             永无BUG
+//          佛曰:
+//                  写字楼里写字间，写字间里程序员；
+//                  程序人员写程序，又拿程序换酒钱。
+//                  酒醒只在网上坐，酒醉还来网下眠；
+//                  酒醉酒醒日复日，网上网下年复年。
+//                  但愿老死电脑间，不愿鞠躬老板前；
+//                  奔驰宝马贵者趣，公交自行程序员。
+//                  别人笑我忒疯癫，我笑自己命太贱；
+//                  不见满街漂亮妹，哪个归得程序员？
+-->
+<head>
+    <!--[if lte IE 9]>
+<meta http-equiv="refresh" content="0;url=http://yoursite.com/warn.html">
+<![endif]-->
+<meta charset="utf-8">
 
-		#postContainer
-			#postTop
-				h4#logo #{theme.logo}
-				br
-				br
-				h2#postTitle #{page.title}
-				br
-				span.postTime(class='fa fa-calendar' aria-hidden='true') #{date(page.date['_i'],'YYYY-M-D')}
-				each tag in page.tags.data
-					span.postTags(class='fa fa-tags'  aria-hidden='true') &nbsp;#{tag.name}
-				br
-				br
-			-str = markdown(page.content)
-			section#articleDiv!= str
-		script(src='/js/jquery.min.js')
-		script(src='/js/highlight.min.js')
-		script(src='/js/start.js')
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+<meta http-equiv="mobile-agent" content="format=html5; url=http://yoursite.com">
+<meta name="author" content="John Doe">
+<link rel="stylesheet" href="/css/SimpleStyle.min.css">
+
+<link rel="shortcut icon" href="/images/favicon.png">
+
+
+<title>git操作 - 听话，叫叔叔！</title>
+
+<meta name="keywords" content="undefined">
+
+<meta name="description " content="null">
+</head>
+<body>
+<div id="nav">
+    <nav class="nav-menu">
+        <a class="site-name current" href="/" title="说">说</a>
+        <a class="site-index current" href="/"><i class="fa fa-home"></i><span>首页</span></a>
+        <a href="/archives" title="归档"><i class="fa fa-archives"></i><span>归档</span></a>
+        <a href="/tags" title="标签"><i class="fa fa-tags"></i><span>标签</span></a>
+        <a href="/video" title="视频资源"><i class="fa fa-video-camera"></i><span>视频资源</span></a>
+        <a href="/rss" title="RSS Feed"><i class="fa fa-rss"></i><span>RSS Feed</span></a>
+        <a href="/help" title="帮助中心"><i class="fa fa-question-circle"></i><span>帮助中心</span></a>
+    </nav>
+</div>
+<div class="nav-user">
+    <a class="btn-search" href="#"><i class="fa fa-search"></i></a>
+    <a class="btn-read-mode" href="#"><i class="fa fa-sun-o"></i></a>
+    <a class="btn-weixin-mp" href="javascript:"><i class="fa fa-weixin"></i></a>
+</div>
+<div id="wrapper" class="clearfix">
+    <div id="body">
+        <div class="main" id="main">
+            <div id="cover">
+    <div class="cover-img"></div>
+    <div class="cover-info">
+        <img class="avatar" width="72" src="/images/favicon.png" alt="avatar" />
+        <h1>说IT</h1>
+        <h3>交流技术，畅谈人文</h3>
+        <p>一个关注技术与人文的IT博客</p>
+        <div class="cover-sns">
+            <div class="btn btn-weixin">
+                <a class="" href="javascript:"><i class="fa fa-weixin"></i></a>
+                <div class="qrcode"><img src="/images/weixin-qrcode.png" alt="weixinQrcode" /></div>
+                <div class="qrcode-arrow"></div>
+            </div>
+            <div class="btn btn-weibo">
+                <a href="https://weibo.com/tangkunyin" target="_blank" rel="nofollow"><i class="fa fa-weibo"></i></a>
+            </div>
+            <div class="btn btn-facebook">
+                <a href="https://facebook.com/tangkunyin"  target="_blank" rel="nofollow"><i class="fa fa-facebook"></i></a>
+            </div>
+            <div class="btn btn-github">
+                <a href="https://github.com/tangkunyin"  target="_blank" rel="nofollow"><i class="fa fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="page-title">
+    <ul>
+        <li><a href="/">最新</a></li>
+        
+        
+        
+        <li class="page-search">
+    <form id="search" class="search-form">
+        <label for="s" class="sr-only">请输入关键字</label>
+        <input class="search-field" type="text" name="s" class="text" placeholder="请输入关键字" />
+        <button type="submit" class="search-form-submit" title="搜索"><i class="fa fa-search"></i></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="请输入关键词..."/>
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(无标题)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+</li>
+
+    </ul>
+</div>
+<div class="main-inner">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="post-header">
+            <div class="post-author clearfix">
+                <a class="avatar fleft" href="undefined" target="_blank">
+                    <img width="48" src="undefined" alt="avatar"/>
+                </a>
+                <p><span class="label">作者</span>
+                    <a href="undefined" target="_blank">undefined</a>
+                    <span title="最后编辑于2017-06-11">2017-06-11</span>
+                </p>
+                <p>undefined</p>
+            </div>
+            <h2 class="post-title">git操作</h2>
+            <div class="post-meta">
+                本文总共1483个字 | 您是第<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>位看到它们的小伙伴
+            </div>
+        </div>
+        <div class="post-content markdown-body">
+            <ul>
+<li>git add .<ul>
+<li>把所有在工作区新添加的或新修改的文件添加到暂存区</li>
+</ul>
+</li>
+<li>git commit -am “注释内容”<ul>
+<li>从暂存区提交到历史区,并且添加注释给所有文件</li>
+</ul>
+</li>
+<li>git status<ul>
+<li>查看当前工作区下的状态</li>
+</ul>
+</li>
+<li>git clone 网站的路径<ul>
+<li>将网站上的代码克隆到本地(github和coding)  </li>
+</ul>
+</li>
+<li>git config –global user.name “”<ul>
+<li>配置用户名,不加””表示查询</li>
+</ul>
+</li>
+<li>git config –global user.email “”<ul>
+<li>配置用户邮箱,不加””表示查询</li>
+</ul>
+</li>
+<li>git push origin master<ul>
+<li>将本地的文档添加到网站上</li>
+<li>在bash中输入账号,别使用弹窗</li>
+</ul>
+</li>
+<li>git remote -v<ul>
+<li>查看当前文件夹的网站目录</li>
+</ul>
+</li>
+</ul>
+<h2 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h2><ul>
+<li><p>堆内存</p>
+<ul>
+<li>只是存放代码</li>
+</ul>
+</li>
+<li><p>栈内存 </p>
+<ul>
+<li>在代码执行的时候,开辟的工作环境</li>
+</ul>
+</li>
+<li><p>全局作用域 window</p>
+<ul>
+<li>浏览器加载html文件的时候,会自动开辟一个给js执行的最外层工作空间(栈内存window),这个栈内存就是全局作用域</li>
+<li>全局作用域不能访问和调用私有作用域里边声明的方法和变量    </li>
+</ul>
+</li>
+<li><p>私有作用域</p>
+<ul>
+<li>私有作用域可以访问全局作用域里边声明或定义的变量    </li>
+</ul>
+</li>
+<li><p>函数 function</p>
+<ul>
+<li>函数执行的时候,会开辟一个独立的工作空间,也开辟了一个栈内存,让代码执行工作</li>
+</ul>
+</li>
+<li><p>公共变量/全局变量</p>
+<ul>
+<li>在全局作用域里声明的函数和变量</li>
+</ul>
+</li>
+<li><p>私有变量</p>
+<ul>
+<li>在私有作用域中声明的变量</li>
+</ul>
+</li>
+</ul>
+<h2 id="预解释"><a href="#预解释" class="headerlink" title="预解释"></a>预解释</h2><ul>
+<li>预解释阶段发生在创建了堆内存,让代码执行之前,对当前作用域中带var和function的进行预解释<ul>
+<li>在浏览器解析执行代码的时候,会提前把带var和function的代码声明或定义,提前放在作用域的最前面执行,也就是浏览器把对这些变量的声明提升到作用域的最前面</li>
+<li>函数数据类型会在预解释阶段同时声明和定义<ul>
+<li>浏览器会将函数的定义以字符串的形式存在一个新的命名空间(堆内存)</li>
+</ul>
+</li>
+<li>在函数执行中,函数的形参也会进行预解释,相当于var 形参</li>
+<li>在判断体中<ul>
+<li>无论判断是否成立,里面的代码都进行预解释,但是不进行定义(包括function)</li>
+<li>在新版本浏览器中,只要条件成立,他就会把函数执行(类似于在条件体内进行预解释)</li>
+</ul>
+</li>
+<li>在函数表达式中,等号右边的function不进行预解释</li>
+<li>自执行函数不进行预解释,但是在他执行的时候开辟的栈内存进行预解释</li>
+<li>在函数执行的时候,return后边紧紧跟着的不进行预解释,但是在return下面的依然进行预解释,但是不执行不赋值</li>
+<li>变量名不能重复,变量当前的作用域中,同名的变量声明,会覆盖之前的声明</li>
+<li>不带var的变量,不进行预解释,相当于给window动态添加了一个属性<ul>
+<li>当代码执行到这的时候,才进行创建变量并赋值这个过程,所以在创建之前的调用,会报错,变量 is not defined.</li>
+</ul>
+</li>
+<li>在预解释的时候，同一个名称的变量,如果都是通过var声明的，之前声明过，后边的声明就不重新在声明，如果是function，后边会重新声明和定义，但是后边的定义会覆盖前边的</li>
+</ul>
+</li>
+<li><p>var num = 2;</p>
+<ul>
+<li>第一步:声明这个变量(预解释这一步)</li>
+<li>第二步:给num这个变量赋值2</li>
+</ul>
+</li>
+<li><p>函数执行过程</p>
+<ul>
+<li>首先进行预解释,形参和函数私有作用域中带var和function进行提升</li>
+<li>如果形参在预解释时被function重叠了,那么形参消失,不能使用那个形参接受传入函数的实参</li>
+<li>代码开始从上到下执行,给形参赋值,代码接着往下执行</li>
+<li>return下面的代码不执行了,返回值,返回产出</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+        <div class="post-tool">
+            <a class="btn-weixin-mp" href="javascript:void(0);" data-cid="52" title="95">
+                <i class="fa fa-mobile" aria-hidden="true"></i> 打包
+            </a>
+        </div>
+        
+        <div class="post-tags">标签：
+            
+        </div>
+        
+    </article>
+    
+</div>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+        </div><!-- end #main-->
+    </div><!-- end #body -->
+    <footer class="footer">
+    <div class="footer-inner">
+        <p>
+            <a href="/about"  title="关于本站">关于本站</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <a href="/help" title="帮助中心" >帮助中心</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <a href="/video" title="视频资源">视频资源</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <!-- 自定义链接 -->
+            <a href="/links" title="友情链接">友情链接</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <a href="/app" title="App下载">App下载</a>
+        </p>
+        <p>
+            本站点采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>，已建立<a href="/timeline" id="siteBuildingTime"></a>天<br/>
+            ©2017 基于<a href="http://hexo.io" target="_blank">Hexo</a>搭建
+            ，主题&nbsp<a href="https://github.com/tangkunyin/hexo-theme-jsimple" target="_blank">JSimple</a>
+            ，作者<a href="https://www.tangkunyin" target="_blank">唐先森</a>
+            ，感谢<a href="https://coding.net/register?key=bcace447-fa41-4579-9783-86fdf0f723e2" target="_blank">Coding</a>提供免费优质的强力驱动
+        </p>
+        
+    </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+<script src="/js/InsightSearch.js"></script>
+<script src="/js/SimpleCore.js"></script>
+</div>
+<div class="fixed-btn">
+    <a class="btn-gotop" href="javascript:"> <i class="fa fa-angle-up"></i></a>
+</div>
+<script>
+    $(function () {
+        SimpleCore.init({
+            buildingTime: '08/20/2014',
+            current: $('.post-tags').length > 0 ? 'post' : 'archive',
+            customImg: '/images/weixin-mp.png'
+        });
+    });
+</script>
+</body>
+</html>
