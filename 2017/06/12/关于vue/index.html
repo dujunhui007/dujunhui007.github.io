@@ -12,7 +12,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/06/12/关于vue/index.html">
 <meta property="og:site_name" content="听话，叫叔叔！">
 <meta property="og:description" content="vue介绍： Vue.js是构建数据驱动的 web 界面的库,而不是一个全能框架—它只 聚焦于视图层，特点： 1.响应的数据绑定 每当修改了数据，DOM 便相应地更新。这样我们应用中的逻辑就 几乎都是直接修改数据了，不必与 DOM 更新搅在一起。这让我 们的代码更容易 撰写、理解与维护 2.组件系统 让我们可以用独立可复用的小组件来构建大型应用 3.特性 简洁 数据驱动 组件化 轻量快速 模块友好">
-<meta property="og:updated_time" content="2017-06-12T15:38:14.247Z">
+<meta property="og:updated_time" content="2017-06-12T15:40:12.957Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="跟vue有关">
 <meta name="twitter:description" content="vue介绍： Vue.js是构建数据驱动的 web 界面的库,而不是一个全能框架—它只 聚焦于视图层，特点： 1.响应的数据绑定 每当修改了数据，DOM 便相应地更新。这样我们应用中的逻辑就 几乎都是直接修改数据了，不必与 DOM 更新搅在一起。这让我 们的代码更容易 撰写、理解与维护 2.组件系统 让我们可以用独立可复用的小组件来构建大型应用 3.特性 简洁 数据驱动 组件化 轻量快速 模块友好">
@@ -129,7 +129,7 @@
 
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#vue介绍："><span class="toc-number">1.</span> <span class="toc-text">vue介绍：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装"><span class="toc-number">2.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#api"><span class="toc-number">3.</span> <span class="toc-text">api</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#修饰符-click-xxx"><span class="toc-number">4.</span> <span class="toc-text">修饰符 @click.xxx</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#vue用法"><span class="toc-number">5.</span> <span class="toc-text">vue用法</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#vue介绍："><span class="toc-number">1.</span> <span class="toc-text">vue介绍：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装"><span class="toc-number">2.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#api"><span class="toc-number">3.</span> <span class="toc-text">api</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#修饰符-click-xxx"><span class="toc-number">4.</span> <span class="toc-text">修饰符 @click.xxx</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#vue用法"><span class="toc-number">5.</span> <span class="toc-text">vue用法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#属性"><span class="toc-number">6.</span> <span class="toc-text">属性</span></a></li></ol>
     </div>
   </span>
 </div>
@@ -152,7 +152,7 @@
       </span>
       
     <div class="postdate">
-        <time datetime="2017-06-12T15:38:14.247Z" itemprop="datePublished">2017-06-12</time>
+        <time datetime="2017-06-12T15:40:12.954Z" itemprop="datePublished">2017-06-12</time>
     </div>
 
 
@@ -204,6 +204,67 @@
 </li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">&#123;&#123;&#125;&#125;将模型的数据取出显示到页面上(支持三元表达式)</div><div class="line"></div><div class="line">&#123;&#123;message?message:&apos;init data&apos;&#125;&#125;</div><div class="line"></div><div class="line">&#123;&#123;&#123;&#125;&#125;&#125;将html类型的数据正常绑定到页面上</div><div class="line">    &#123;&#123;*message&#125;&#125;</div><div class="line"></div><div class="line">&#123;&#123;&#123;&#125;&#125;&#125;将html类型的数据正常绑定到页面上</div><div class="line">     &lt;div class=&quot;app&quot;&gt;</div><div class="line">         &#123;&#123;&#123;message&#125;&#125;&#125;</div><div class="line">     &lt;/div&gt;</div><div class="line">     &lt;script&gt;</div><div class="line">         var vm = new Vue(&#123;</div><div class="line">             el:&apos;.app&apos;,</div><div class="line">             data:&#123;</div><div class="line">                 message:&apos;&lt;h1&gt;hello world&lt;/h1&gt;&apos;</div><div class="line">             &#125;</div><div class="line">         &#125;);</div><div class="line">     &lt;/script&gt;</div></pre></td></tr></table></figure>
+<ul>
+<li><p>Vue的实例</p>
+<ul>
+<li>一个 Vue 实例其实正是一个 MVVM 模式中所描述的 ViewModel(实例上的data属性绑定的数据和原数据指定的是同一内存空间)<ul>
+<li>model</li>
+<li>view </li>
+<li>viewModel</li>
+</ul>
+</li>
+<li>MVC<ul>
+<li>model  数据</li>
+<li>view   视图</li>
+<li>controller 控制器<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">var message  = &#123;</div><div class="line">    name:&apos;hello&apos;</div><div class="line">&#125;;</div><div class="line">var vm = new Vue(&#123;</div><div class="line">    el:&apos;.app&apos;,</div><div class="line">    data:&#123;</div><div class="line">        message:message</div><div class="line">    &#125;</div><div class="line">&#125;);</div><div class="line">alert(vm.message == message);</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>修改数据属性刷新视图 </p>
+<ul>
+<li>注意：<ul>
+<li>不能将原数据指向新的数据，否则不能刷新视图</li>
+<li>实例创建后不能设置以前没有的属性，无法映射到视图</li>
+<li>Vue.set/vm.$set可以给对象添加属性</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>实例上的属性和方法</p>
+<ul>
+<li>Vue通过$暴露实例上的属性和方法</li>
+<li>$el ：获取当前绑定的元素</li>
+<li>$data ：获取当前绑定的数据(更换data对象刷新视图，尽量不去更换)</li>
+<li>$watch :监控模型的变化<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">vm.$watch(&apos;message&apos;, function (newVal,oldVal) &#123;</div><div class="line">    console.log(newVal,oldVal);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h3><ul>
+<li>方法名           用法</li>
+<li>created     先实例化,在实例化后(检测el)</li>
+<li>vm.$mount(‘#app’)    手动挂载实例</li>
+<li>beforeCompile    开始编译之前</li>
+<li>compiled    编译完成后</li>
+<li>ready    插入文档后</li>
+<li>vm.$destroy()    手动销毁实例</li>
+<li>beforeDestroy    将要销毁</li>
+<li>destroyed    销毁实例</li>
+<li><p>生命周期的使用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">var vm = new Vue(&#123;</div><div class="line">    data:&#123;</div><div class="line">        hello:&apos;zfpx&apos;</div><div class="line">    &#125;,</div><div class="line">    created: function () &#123;alert(&apos;实例创建完成&apos;);&#125;,</div><div class="line">    beforeCompile: function () &#123;alert(&apos;开始编译前&apos;)&#125;,</div><div class="line">    compiled: function () &#123;alert(&apos;编译完成&apos;)&#125;,</div><div class="line">    ready: function () &#123;alert(&apos;准备好了&apos;)&#125;,</div><div class="line">    beforeDestroy: function () &#123;alert(&apos;准备销毁&apos;)&#125;,</div><div class="line">    destroyed: function () &#123;alert(&quot;销毁&quot;)&#125;</div><div class="line">&#125;);</div><div class="line">vm.$mount(&apos;#app&apos;);</div><div class="line">vm.$destroy();</div></pre></td></tr></table></figure>
+<ul>
+<li>属性的计算<ul>
+<li>用于计算性属性(默认为属性的get方法)<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">var vm = new Vue(&#123;</div><div class="line">    data:&#123;</div><div class="line">        name:&apos;zfpx&apos;</div><div class="line">    &#125;,</div><div class="line">    computed: &#123;</div><div class="line">        hello:&#123;</div><div class="line">            get: function () &#123;</div><div class="line">                return this.name+8;</div><div class="line">            &#125;,</div><div class="line">            set: function (val) &#123;</div><div class="line">                this.name = val</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;,</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 
   </div>
 </article>
@@ -230,7 +291,7 @@
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#vue介绍："><span class="toc-number">1.</span> <span class="toc-text">vue介绍：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装"><span class="toc-number">2.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#api"><span class="toc-number">3.</span> <span class="toc-text">api</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#修饰符-click-xxx"><span class="toc-number">4.</span> <span class="toc-text">修饰符 @click.xxx</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#vue用法"><span class="toc-number">5.</span> <span class="toc-text">vue用法</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#vue介绍："><span class="toc-number">1.</span> <span class="toc-text">vue介绍：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装"><span class="toc-number">2.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#api"><span class="toc-number">3.</span> <span class="toc-text">api</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#修饰符-click-xxx"><span class="toc-number">4.</span> <span class="toc-text">修饰符 @click.xxx</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#vue用法"><span class="toc-number">5.</span> <span class="toc-text">vue用法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#属性"><span class="toc-number">6.</span> <span class="toc-text">属性</span></a></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">
