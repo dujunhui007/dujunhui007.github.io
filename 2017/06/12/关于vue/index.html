@@ -1,22 +1,322 @@
-doctype html
-html
-	include partial/head.jade
-	body
+<!DOCTYPE HTML>
+<html class="no-js" lang="zh-CN">
+<!--
+//                            _ooOoo_
+//                           o8888888o
+//                           88" . "88
+//                           (| -_- |)
+//                            O\ = /O
+//                        ____/`---'\____
+//                      .   ' \\| |// `.
+//                       / \\||| : |||// \
+//                     / _||||| -:- |||||- \
+//                       | | \\\ - /// | |
+//                     | \_| ''\---/'' | |
+//                      \ .-\__ `-` ___/-. /
+//                   ___`. .' /--.--\ `. . __
+//                ."" '< `.___\_<|>_/___.' >'"".
+//               | | : `- \`.;`\ _ /`;.`/ - ` : | |
+//                 \ \ `-. \_ __\ /__ _/ .-` / /
+//         ======`-.____`-.___\_____/___.-`____.-'======
+//                            `=---='
+//                 拦截插件累计拦截逗比攻击"1381438"次！
+//         .............................................
+//                  佛祖保佑             永无BUG
+//          佛曰:
+//                  写字楼里写字间，写字间里程序员；
+//                  程序人员写程序，又拿程序换酒钱。
+//                  酒醒只在网上坐，酒醉还来网下眠；
+//                  酒醉酒醒日复日，网上网下年复年。
+//                  但愿老死电脑间，不愿鞠躬老板前；
+//                  奔驰宝马贵者趣，公交自行程序员。
+//                  别人笑我忒疯癫，我笑自己命太贱；
+//                  不见满街漂亮妹，哪个归得程序员？
+-->
+<head>
+    <!--[if lte IE 9]>
+<meta http-equiv="refresh" content="0;url=http://yoursite.com/warn.html">
+<![endif]-->
+<meta charset="utf-8">
 
-		#postContainer
-			#postTop
-				h4#logo #{theme.logo}
-				br
-				br
-				h2#postTitle #{page.title}
-				br
-				span.postTime(class='fa fa-calendar' aria-hidden='true') #{date(page.date['_i'],'YYYY-M-D')}
-				each tag in page.tags.data
-					span.postTags(class='fa fa-tags'  aria-hidden='true') &nbsp;#{tag.name}
-				br
-				br
-			-str = markdown(page.content)
-			section#articleDiv!= str
-		script(src='/js/jquery.min.js')
-		script(src='/js/highlight.min.js')
-		script(src='/js/start.js')
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+<meta http-equiv="mobile-agent" content="format=html5; url=http://yoursite.com">
+<meta name="author" content="John Doe">
+<link rel="stylesheet" href="/css/SimpleStyle.min.css">
+
+<link rel="shortcut icon" href="/images/favicon.png">
+
+
+<title>跟vue有关 - 听话，叫叔叔！</title>
+
+<meta name="keywords" content="undefined">
+
+<meta name="description " content="null">
+</head>
+<body>
+<div id="nav">
+    <nav class="nav-menu">
+        <a class="site-name current" href="/" title="说">说</a>
+        <a class="site-index current" href="/"><i class="fa fa-home"></i><span>Home</span></a>
+        <a href="/archives" title="Archives"><i class="fa fa-archives"></i><span>Archives</span></a>
+        <a href="/tags" title="Tags"><i class="fa fa-tags"></i><span>Tags</span></a>
+        <a href="/video" title="Video"><i class="fa fa-video-camera"></i><span>Video</span></a>
+        <a href="/rss" title="RSS Feed"><i class="fa fa-rss"></i><span>RSS Feed</span></a>
+        <a href="/help" title="Help"><i class="fa fa-question-circle"></i><span>Help</span></a>
+    </nav>
+</div>
+<div class="nav-user">
+    <a class="btn-search" href="#"><i class="fa fa-search"></i></a>
+    <a class="btn-read-mode" href="#"><i class="fa fa-sun-o"></i></a>
+    <a class="btn-weixin-mp" href="javascript:"><i class="fa fa-weixin"></i></a>
+</div>
+<div id="wrapper" class="clearfix">
+    <div id="body">
+        <div class="main" id="main">
+            <div id="cover">
+    <div class="cover-img"></div>
+    <div class="cover-info">
+        <img class="avatar" width="72" src="/images/favicon.png" alt="avatar" />
+        <h1>说IT</h1>
+        <h3>交流技术，畅谈人文</h3>
+        <p>一个关注技术与人文的IT博客</p>
+        <div class="cover-sns">
+            <div class="btn btn-weixin">
+                <a class="" href="javascript:"><i class="fa fa-weixin"></i></a>
+                <div class="qrcode"><img src="/images/weixin-qrcode.png" alt="weixinQrcode" /></div>
+                <div class="qrcode-arrow"></div>
+            </div>
+            <div class="btn btn-weibo">
+                <a href="https://weibo.com/tangkunyin" target="_blank" rel="nofollow"><i class="fa fa-weibo"></i></a>
+            </div>
+            <div class="btn btn-facebook">
+                <a href="https://facebook.com/tangkunyin"  target="_blank" rel="nofollow"><i class="fa fa-facebook"></i></a>
+            </div>
+            <div class="btn btn-github">
+                <a href="https://github.com/tangkunyin"  target="_blank" rel="nofollow"><i class="fa fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="page-title">
+    <ul>
+        <li><a href="/">最新</a></li>
+        
+        
+        
+        <li class="page-search">
+    <form id="search" class="search-form">
+        <label for="s" class="sr-only">Input Search key Words Here</label>
+        <input class="search-field" type="text" name="s" class="text" placeholder="Input Search key Words Here" />
+        <button type="submit" class="search-form-submit" title="Search"><i class="fa fa-search"></i></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..."/>
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+</li>
+
+    </ul>
+</div>
+<div class="main-inner">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="post-header">
+            <div class="post-author clearfix">
+                <a class="avatar fleft" href="undefined" target="_blank">
+                    <img width="48" src="undefined" alt="avatar"/>
+                </a>
+                <p><span class="label">作者</span>
+                    <a href="undefined" target="_blank">undefined</a>
+                    <span title="最后编辑于2017-06-12">2017-06-12</span>
+                </p>
+                <p>undefined</p>
+            </div>
+            <h2 class="post-title">跟vue有关</h2>
+            <div class="post-meta">
+                本文总共3604个字 | 您是第<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>位看到它们的小伙伴
+            </div>
+        </div>
+        <div class="post-content markdown-body">
+            <h3 id="vue介绍："><a href="#vue介绍：" class="headerlink" title="vue介绍："></a>vue介绍：</h3><ul>
+<li>Vue.js是构建数据驱动的 web 界面的库,而不是一个全能框架—它只 聚焦于视图层，特点：<ul>
+<li>1.响应的数据绑定 每当修改了数据，DOM 便相应地更新。这样我们应用中的逻辑就 几乎都是直接修改数据了，不必与 DOM 更新搅在一起。这让我 们的代码更容易 撰写、理解与维护</li>
+<li>2.组件系统 让我们可以用独立可复用的小组件来构建大型应用</li>
+<li>3.特性 简洁 数据驱动 组件化 轻量快速 模块友好</li>
+<li>4.Vue.js 不支持 IE8 及其以下版本<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3></li>
+</ul>
+</li>
+<li>安装前初始化package.json,主要用来描述自己的项目，记录安装过的文件有哪些,在当前文件下生成json,名字不能叫要安装的文件</li>
+<li>使用cdn<ul>
+<li><a href="http://cdn.jsdelivr.net/vue/1.0.26/vue.min.js" target="_blank" rel="external">http://cdn.jsdelivr.net/vue/1.0.26/vue.min.js</a></li>
+</ul>
+</li>
+<li>通过npm安装<ul>
+<li>注意：–save或者-S代表项目依赖 –save-dev或者-D开发依赖</li>
+<li>npm init -y</li>
+<li>$ npm install vue</li>
+</ul>
+</li>
+<li>通过bower安装<ul>
+<li>$ bower install vue</li>
+</ul>
+</li>
+<li>安装后默认会生成node_modules文件夹<ul>
+<li>上传到git上node_modules是忽略掉的，拉下代码后 需要重新npm install 安装依赖<h3 id="api"><a href="#api" class="headerlink" title="api"></a>api</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">v-text &#123;&#123;&#125;&#125;</div><div class="line">v-html</div><div class="line">v-model </div><div class="line">v-once</div><div class="line">v-on:click -&gt; @click</div><div class="line">v-for</div><div class="line">v-if/v-show</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="修饰符-click-xxx"><a href="#修饰符-click-xxx" class="headerlink" title="修饰符 @click.xxx"></a>修饰符 @click.xxx</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">.stop</div><div class="line">.capture</div><div class="line">.keyCode</div><div class="line">.once</div><div class="line">.prevent</div><div class="line">.self</div></pre></td></tr></table></figure>
+<h3 id="vue用法"><a href="#vue用法" class="headerlink" title="vue用法"></a>vue用法</h3><ul>
+<li><p>hello world</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;app&quot;&gt;</div><div class="line">    &#123;&#123;message&#125;&#125;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;script src=&quot;vue.js&quot;&gt;&lt;/script&gt;</div><div class="line">&lt;script&gt;</div><div class="line">    var vm = new Vue(&#123;</div><div class="line">        el:&apos;.app&apos;,</div><div class="line">        data:&#123;//小胡子语法</div><div class="line">            message:&apos;hello world&apos;</div><div class="line">        &#125;</div><div class="line">    &#125;);</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>双向数据绑定v-model</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;app&quot;&gt;</div><div class="line">    &#123;&#123;message&#125;&#125;</div><div class="line">  + &lt;input type=&quot;text&quot; v-model=&quot;message&quot;&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>绑定表达式 </p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">&#123;&#123;&#125;&#125;将模型的数据取出显示到页面上(支持三元表达式)</div><div class="line"></div><div class="line">&#123;&#123;message?message:&apos;init data&apos;&#125;&#125;</div><div class="line"></div><div class="line">&#123;&#123;&#123;&#125;&#125;&#125;将html类型的数据正常绑定到页面上</div><div class="line">    &#123;&#123;*message&#125;&#125;</div><div class="line"></div><div class="line">&#123;&#123;&#123;&#125;&#125;&#125;将html类型的数据正常绑定到页面上</div><div class="line">     &lt;div class=&quot;app&quot;&gt;</div><div class="line">         &#123;&#123;&#123;message&#125;&#125;&#125;</div><div class="line">     &lt;/div&gt;</div><div class="line">     &lt;script&gt;</div><div class="line">         var vm = new Vue(&#123;</div><div class="line">             el:&apos;.app&apos;,</div><div class="line">             data:&#123;</div><div class="line">                 message:&apos;&lt;h1&gt;hello world&lt;/h1&gt;&apos;</div><div class="line">             &#125;</div><div class="line">         &#125;);</div><div class="line">     &lt;/script&gt;</div></pre></td></tr></table></figure>
+<ul>
+<li><p>Vue的实例</p>
+<ul>
+<li>一个 Vue 实例其实正是一个 MVVM 模式中所描述的 ViewModel(实例上的data属性绑定的数据和原数据指定的是同一内存空间)<ul>
+<li>model</li>
+<li>view </li>
+<li>viewModel</li>
+</ul>
+</li>
+<li>MVC<ul>
+<li>model  数据</li>
+<li>view   视图</li>
+<li>controller 控制器<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">var message  = &#123;</div><div class="line">    name:&apos;hello&apos;</div><div class="line">&#125;;</div><div class="line">var vm = new Vue(&#123;</div><div class="line">    el:&apos;.app&apos;,</div><div class="line">    data:&#123;</div><div class="line">        message:message</div><div class="line">    &#125;</div><div class="line">&#125;);</div><div class="line">alert(vm.message == message);</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>修改数据属性刷新视图 </p>
+<ul>
+<li>注意：<ul>
+<li>不能将原数据指向新的数据，否则不能刷新视图</li>
+<li>实例创建后不能设置以前没有的属性，无法映射到视图</li>
+<li>Vue.set/vm.$set可以给对象添加属性</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>实例上的属性和方法</p>
+<ul>
+<li>Vue通过$暴露实例上的属性和方法</li>
+<li>$el ：获取当前绑定的元素</li>
+<li>$data ：获取当前绑定的数据(更换data对象刷新视图，尽量不去更换)</li>
+<li>$watch :监控模型的变化<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">vm.$watch(&apos;message&apos;, function (newVal,oldVal) &#123;</div><div class="line">    console.log(newVal,oldVal);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h3><ul>
+<li>方法名           用法</li>
+<li>created     先实例化,在实例化后(检测el)</li>
+<li>vm.$mount(‘#app’)    手动挂载实例</li>
+<li>beforeCompile    开始编译之前</li>
+<li>compiled    编译完成后</li>
+<li>ready    插入文档后</li>
+<li>vm.$destroy()    手动销毁实例</li>
+<li>beforeDestroy    将要销毁</li>
+<li>destroyed    销毁实例</li>
+<li><p>生命周期的使用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">var vm = new Vue(&#123;</div><div class="line">    data:&#123;</div><div class="line">        hello:&apos;zfpx&apos;</div><div class="line">    &#125;,</div><div class="line">    created: function () &#123;alert(&apos;实例创建完成&apos;);&#125;,</div><div class="line">    beforeCompile: function () &#123;alert(&apos;开始编译前&apos;)&#125;,</div><div class="line">    compiled: function () &#123;alert(&apos;编译完成&apos;)&#125;,</div><div class="line">    ready: function () &#123;alert(&apos;准备好了&apos;)&#125;,</div><div class="line">    beforeDestroy: function () &#123;alert(&apos;准备销毁&apos;)&#125;,</div><div class="line">    destroyed: function () &#123;alert(&quot;销毁&quot;)&#125;</div><div class="line">&#125;);</div><div class="line">vm.$mount(&apos;#app&apos;);</div><div class="line">vm.$destroy();</div></pre></td></tr></table></figure>
+<ul>
+<li>属性的计算<ul>
+<li>用于计算性属性(默认为属性的get方法)<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">var vm = new Vue(&#123;</div><div class="line">    data:&#123;</div><div class="line">        name:&apos;zfpx&apos;</div><div class="line">    &#125;,</div><div class="line">    computed: &#123;</div><div class="line">        hello:&#123;</div><div class="line">            get: function () &#123;</div><div class="line">                return this.name+8;</div><div class="line">            &#125;,</div><div class="line">            set: function (val) &#123;</div><div class="line">                this.name = val</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;,</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+        <div class="post-tool">
+            <a class="btn-weixin-mp" href="javascript:void(0);" data-cid="52" title="95">
+                <i class="fa fa-mobile" aria-hidden="true"></i> 打包
+            </a>
+        </div>
+        
+        <div class="post-tags">Tags：
+            
+        </div>
+        
+    </article>
+    
+</div>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+        </div><!-- end #main-->
+    </div><!-- end #body -->
+    <footer class="footer">
+    <div class="footer-inner">
+        <p>
+            <a href="/about"  title="About">About</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <a href="/help" title="Help" >Help</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <a href="/video" title="Video">Video</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <!-- 自定义链接 -->
+            <a href="/links" title="友情链接">友情链接</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <a href="/app" title="App下载">App下载</a>
+        </p>
+        <p>
+            本站点采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>，已建立<a href="/timeline" id="siteBuildingTime"></a>天<br/>
+            ©2017 基于<a href="http://hexo.io" target="_blank">Hexo</a>搭建
+            ，主题&nbsp<a href="https://github.com/tangkunyin/hexo-theme-jsimple" target="_blank">JSimple</a>
+            ，作者<a href="https://www.tangkunyin" target="_blank">唐先森</a>
+            ，感谢<a href="https://coding.net/register?key=bcace447-fa41-4579-9783-86fdf0f723e2" target="_blank">Coding</a>提供免费优质的强力驱动
+        </p>
+        
+    </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+<script src="/js/InsightSearch.js"></script>
+<script src="/js/SimpleCore.js"></script>
+</div>
+<div class="fixed-btn">
+    <a class="btn-gotop" href="javascript:"> <i class="fa fa-angle-up"></i></a>
+</div>
+<script>
+    $(function () {
+        SimpleCore.init({
+            buildingTime: '08/20/2014',
+            current: $('.post-tags').length > 0 ? 'post' : 'archive',
+            customImg: '/images/weixin-mp.png'
+        });
+    });
+</script>
+</body>
+</html>
