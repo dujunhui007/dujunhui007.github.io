@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="95713c56-648e-4372-a456-306eb778a4f9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/common.less" afterPath="$PROJECT_DIR$/css/common.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,17 +18,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="239" column="74" lean-forward="false" selection-start-line="239" selection-start-column="74" selection-end-line="239" selection-end-column="74" />
+            <state relative-caret-position="376">
+              <caret line="240" column="78" lean-forward="false" selection-start-line="240" selection-start-column="78" selection-end-line="240" selection-end-column="78" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="common.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/common.less">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="327">
@@ -62,8 +61,8 @@
         <option value="$PROJECT_DIR$/js/TweenMax.min.js" />
         <option value="$PROJECT_DIR$/chongdong.html" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/common.less" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -160,12 +159,12 @@
       <workItem from="1512717769501" duration="3413000" />
       <workItem from="1512722138940" duration="1487000" />
       <workItem from="1512726085498" duration="1026000" />
-      <workItem from="1512781554814" duration="615000" />
+      <workItem from="1512781554814" duration="934000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16581000" />
+    <option name="totallyTimeSpent" value="16900000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -493,18 +492,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="239" column="74" lean-forward="false" selection-start-line="239" selection-start-column="74" selection-end-line="239" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/common.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="327">
           <caret line="225" column="19" lean-forward="false" selection-start-line="225" selection-start-column="19" selection-end-line="225" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="240" column="78" lean-forward="false" selection-start-line="240" selection-start-column="78" selection-end-line="240" selection-end-column="78" />
           <folding />
         </state>
       </provider>
