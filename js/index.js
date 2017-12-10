@@ -100,3 +100,25 @@ function animation() {
 }
 
 animation();
+
+//给首页详情加定时动画
+function replaceAnimation() {
+  var animations = ["bounce", "flash", "pulse", "rubberBand", "shake", "swing", "tada", "wobble", "bounceIn", "bounceInDown", "bounceInLeft", "bounceInRight", "bounceInUp", "bounceOut", "bounceOutDown", "bounceOutLeft", "bounceOutRight", "bounceOutUp", "fadeIn", "fadeInDown", "fadeInDownBig", "fadeInLeft", "fadeInLeftBig", "fadeInRight", "fadeInRightBig", "fadeInUp", "fadeInUpBig", "fadeOut", "fadeOutDown", "fadeOutDownBig", "fadeOutLeft", "fadeOutLeftBig", "fadeOutRight", "fadeOutRightBig", "fadeOutUp", "fadeOutUpBig", "flip", "flipInX", "flipInY", "flipOutX", "flipOutY", "lightSpeedIn", "lightSpeedOut", "rotateIn", "rotateInDownLeft", "rotateInDownRight", "rotateInUpLeft", "rotateInUpRight", "rotateOut", "rotateOutDownLeft", "rotateOutDownRight", "rotateOutUpLeft", "rotateOutUpRight", "slideInDown", "slideInLeft", "slideInRight", "slideOutLeft", "slideOutRight", "slideInDown", "slideOutUp", "slideInUp", "slideOutDown", "hinge", "rollIn", "rollOut", "zoomIn", "zoomInDown", "zoomInLeft", "zoomInRight", "zoomInUp", "zoomOut", "zoomOutDown", "zoomOutLeft", "zoomOutRight", "zoomOutUp", "slideInDown", "slideInDown", "slideInDown", "slideInDown", "slideInDown", "slideInDown", "slideInDown", "slideInDown", "slideInDown", "slideInDown"],
+    introduceAnimations = ["bounce", "flash", "pulse", "rubberBand", "shake", "swing", "tada", "wobble", "bounceIn", "bounceInDown", "bounceInLeft", "bounceInRight", "bounceInUp", "bounceOut", "bounceOutDown", "bounceOutLeft", "bounceOutRight", "bounceOutUp", "fadeIn", "fadeInDown", "fadeInDownBig", "fadeInLeft", "fadeInLeftBig", "fadeInRight", "fadeInRightBig", "fadeInUp", "fadeInUpBig", "fadeOut", "fadeOutDown", "fadeOutDownBig", "fadeOutLeft", "fadeOutLeftBig", "fadeOutRight", "fadeOutRightBig", "fadeOutUp", "fadeOutUpBig", "flip", "flipInX", "flipInY", "flipOutX", "flipOutY", "lightSpeedIn", "lightSpeedOut", "rotateIn", "rotateInDownLeft", "rotateInDownRight", "rotateInUpLeft", "rotateInUpRight", "rotateOut", "rotateOutDownLeft", "rotateOutDownRight", "rotateOutUpLeft", "rotateOutUpRight", "slideInDown", "slideInLeft", "slideInRight", "slideOutLeft", "slideOutRight", "slideInDown", "slideOutUp", "slideInUp", "slideOutDown", "hinge", "rollIn", "rollOut", "zoomIn", "zoomInDown", "zoomInLeft", "zoomInRight", "zoomInUp", "zoomOut", "zoomOutDown", "zoomOutLeft", "zoomOutRight", "zoomOutUp", "slideInDown", "slideInDown", "slideInDown", "slideInDown", "slideInDown", "slideInDown", "slideInDown", "slideInDown", "slideInDown", "slideInDown"],
+    introduceIndex = Math.round(Math.random() * (introduceAnimations.length - 1)),
+    aIndex = Math.round(Math.random() * (animations.length - 1));
+
+  console.log(aIndex);
+  $(".homeContainer #myParticulars").addClass(animations[aIndex]);
+  $(".homeContainer .introduce").addClass(introduceAnimations[introduceIndex]);
+  console.log(animations[aIndex]);
+  setTimeout(function () {
+    $(".homeContainer #myParticulars").removeClass(animations[aIndex]);
+    $(".homeContainer .introduce").removeClass(introduceAnimations[introduceIndex]);
+    replaceAnimation();
+  }, 3600);
+}
+
+replaceAnimation();
+
+
