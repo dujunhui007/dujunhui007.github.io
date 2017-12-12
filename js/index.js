@@ -121,4 +121,30 @@ function replaceAnimation() {
 
 replaceAnimation();
 
+//->音频的自动播放
+~function () {
+  var audioBox = document.getElementById('audioBox'),
+    musicBox = document.getElementById('musicBox'),
+    musicImg1=musicBox.getElementsByTagName('img')[0],
+    musicImg2=musicBox.getElementsByTagName('img')[1];
+
+  window.setTimeout(function () {
+    audioBox.play();
+    musicImg1.className = 'music musicMove';
+    musicImg1.style.opacity = 1;
+  }, 1500);
+  musicBox.onclick = function () {
+    if (audioBox.paused) {
+      audioBox.play();
+      musicImg1.className = 'music musicMove';
+      musicImg2.style.opacity=1;
+    } else {
+      audioBox.pause();
+      musicImg1.className = 'music';
+      musicBox.style.opacity = 1;
+      musicImg2.style.opacity=0;
+    }
+  };
+}();
+
 
