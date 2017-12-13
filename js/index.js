@@ -152,9 +152,7 @@ $('.deScroll').css('overflow', 'hidden'),
     $('.deScroll').css('overflow', 'auto')
   }),
   $(window).scroll(function () {
-    if ($(window).scrollTop() > 0) {
-
-    } else {
+    if ($(window).scrollTop() <= 0) {
       $('.deScroll').css('overflow', 'hidden')
     }
   })
