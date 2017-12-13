@@ -125,8 +125,8 @@ replaceAnimation();
 ~function () {
   var audioBox = document.getElementById('audioBox'),
     musicBox = document.getElementById('musicBox'),
-    musicImg1=musicBox.getElementsByTagName('img')[0],
-    musicImg2=musicBox.getElementsByTagName('img')[1];
+    musicImg1 = musicBox.getElementsByTagName('img')[0],
+    musicImg2 = musicBox.getElementsByTagName('img')[1];
 
   window.setTimeout(function () {
     audioBox.play();
@@ -137,14 +137,24 @@ replaceAnimation();
     if (audioBox.paused) {
       audioBox.play();
       musicImg1.className = 'music musicMove';
-      musicImg2.style.opacity=1;
+      musicImg2.style.opacity = 1;
     } else {
       audioBox.pause();
       musicImg1.className = 'music';
       musicBox.style.opacity = 1;
-      musicImg2.style.opacity=0;
+      musicImg2.style.opacity = 0;
     }
   };
 }();
 
+$('.deScroll').css('overflow', 'hidden'),
+  $(".pageDown").click(function () {
+    $('.deScroll').css('overflow', 'auto')
+  }),
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 0) {
 
+    } else {
+      $('.deScroll').css('overflow', 'hidden')
+    }
+  })
