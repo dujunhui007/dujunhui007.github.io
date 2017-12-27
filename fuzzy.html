@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="images/favicon.ico" rel="shortcut icon">
+    <title>模糊背景实现</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html, body {
+            width: 100%;
+            height: 100%;
+            /*width: calc(100% + 30px);*/
+            /*height: calc(100% + 30px);*/
+        }
+
+        body,main::before{
+            background: url("images/111.jpg") 0 / cover fixed;
+        }
+
+        main {
+            width: 50%;
+            height: 50%;
+            margin-left: 25%;
+            margin-top: 25%;
+            /*width: calc(100% + 30px);*/
+            /*height: calc(100% + 30px);*/
+            /*margin-top: 150px;*/
+            /*margin-left: calc(50% - 250px);*/
+            position: relative;
+            background: hsla(0, 0%, 100%, .3);
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        main::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            filter: blur(20px);
+            margin: -30px;
+        }
+
+    </style>
+    <script src="/js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body>
+
+<main>
+    <blockquote>
+        The services provided by the Asch platform include a public chain and a set of application SDKs; the public
+        chain is called the main chain. The Asch application SDKs can be used to develop blockchain applications with a
+        free-running, immutable ledger. These applications are also known as side chain applications. An application SDK
+        has a built-in cross-chain protocol, through which the side chain can communicate with the main chain. In other
+        words, the main chain has the function of asset routing, through which a variety of assets can flow among
+        different applications. Asch's ecological system contains multiple chains, with each chain possessing the
+        ability to carry multiple tokens or assets. Each token or asset can also be transferred to multiple chains.
+        <footer>
+            <cite>
+                abc
+                qwe
+            </cite>
+        </footer>
+    </blockquote>
+</main>
+</body>
+</html>

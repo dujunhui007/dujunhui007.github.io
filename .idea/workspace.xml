@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95713c56-648e-4372-a456-306eb778a4f9" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/111.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuzzy.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
@@ -21,13 +23,15 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="155" column="53" lean-forward="false" selection-start-line="155" selection-start-column="53" selection-end-line="155" selection-end-column="53" />
+            <state relative-caret-position="60">
+              <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
               <folding>
+                <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#li#2;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#li#3;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#li#4;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#li#6;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#6;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -70,6 +74,7 @@
         <option value="$PROJECT_DIR$/jqHoverCss/font-awesome.min.css" />
         <option value="$PROJECT_DIR$/jqHover/jqHover.html" />
         <option value="$PROJECT_DIR$/jQuery-hover3D/jq3D.html" />
+        <option value="$PROJECT_DIR$/mohu.html" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -84,9 +89,10 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="175" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="828" />
-    <option name="height" value="362" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -104,7 +110,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -116,6 +121,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -130,10 +136,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\myIndex\dujunhui007.github.io\images" />
       <recent name="C:\myIndex\dujunhui007.github.io" />
       <recent name="C:\myIndex\dujunhui007.github.io\jqHoverFonts" />
       <recent name="C:\myIndex\dujunhui007.github.io\buttonHoverCss" />
-      <recent name="C:\myIndex\dujunhui007.github.io\images" />
       <recent name="C:\myIndex\dujunhui007.github.io\js" />
     </key>
   </component>
@@ -183,16 +189,18 @@
       <workItem from="1513132233417" duration="403000" />
       <workItem from="1513133466277" duration="7214000" />
       <workItem from="1513248692601" duration="6653000" />
-      <workItem from="1513323726271" duration="1008000" />
+      <workItem from="1513323726271" duration="2782000" />
+      <workItem from="1513495986557" duration="701000" />
+      <workItem from="1514217954859" duration="1624000" />
+      <workItem from="1514345389157" duration="243000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55342000" />
+    <option name="totallyTimeSpent" value="59684000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15773809" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -226,7 +234,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package-lock.json" />
     <entry file="file://$PROJECT_DIR$/README.md" />
     <entry file="file://$PROJECT_DIR$/css/index.min.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -295,13 +302,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/animate.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-836">
-          <caret line="3012" column="28" lean-forward="false" selection-start-line="3012" selection-start-column="19" selection-end-line="3012" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/jquery-1.8.3.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -320,7 +320,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179820">
           <caret line="858" column="245" lean-forward="false" selection-start-line="858" selection-start-column="245" selection-end-line="858" selection-end-column="245" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -328,9 +327,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="e#232#3561#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -345,7 +341,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5070">
           <caret line="156" column="5" lean-forward="false" selection-start-line="156" selection-start-column="5" selection-end-line="156" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -391,29 +386,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="32" column="14" lean-forward="false" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
-          <folding>
-            <element signature="e#786#923#0" expanded="false" />
-            <element signature="e#927#1056#0" expanded="false" />
-            <element signature="e#1071#1182#0" expanded="false" />
-            <element signature="e#1186#1398#0" expanded="false" />
-            <element signature="e#1402#1606#0" expanded="false" />
-            <element signature="e#1617#1674#0" expanded="false" />
-            <element signature="e#1690#1936#0" expanded="false" />
-            <element signature="e#1939#2081#0" expanded="false" />
-            <element signature="e#2084#2218#0" expanded="false" />
-            <element signature="e#2228#2551#0" expanded="false" />
-            <element signature="e#2570#2778#0" expanded="false" />
-            <element signature="e#2786#3014#0" expanded="false" />
-            <element signature="e#3591#3861#0" expanded="false" />
-            <element signature="e#3862#4124#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jqHover/jqHover.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -442,51 +414,68 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="13" column="6" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sideshow20151016/js/EasePack.min.js">
+    <entry file="file://$PROJECT_DIR$/sideshow20151016/js/EasePack.min.js" />
+    <entry file="file://$PROJECT_DIR$/sideshow20151016/js/demo-1.js" />
+    <entry file="file://$PROJECT_DIR$/sideshow20151016/index.html" />
+    <entry file="file://$PROJECT_DIR$/sideshow20151016/js/rAF.js" />
+    <entry file="file://$PROJECT_DIR$/css/animate.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-900">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="388">
+          <caret line="617" column="0" lean-forward="true" selection-start-line="617" selection-start-column="0" selection-end-line="617" selection-end-column="0" />
+          <folding>
+            <element signature="e#12768#13233#0" expanded="false" />
+            <element signature="e#13235#13857#0" expanded="false" />
+            <element signature="e#13953#14417#0" expanded="false" />
+            <element signature="e#14419#15039#0" expanded="false" />
+            <element signature="e#15056#15136#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sideshow20151016/js/demo-1.js">
+    <entry file="file://$PROJECT_DIR$/css/index.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4754">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="201">
+          <caret line="101" column="2" lean-forward="false" selection-start-line="101" selection-start-column="2" selection-end-line="101" selection-end-column="48" />
+          <folding>
+            <element signature="e#256#782#0" expanded="false" />
+            <element signature="e#786#923#0" expanded="false" />
+            <element signature="e#927#1056#0" expanded="false" />
+            <element signature="e#1071#1182#0" expanded="false" />
+            <element signature="e#1186#1398#0" expanded="false" />
+            <element signature="e#1402#1606#0" expanded="false" />
+            <element signature="e#1617#1674#0" expanded="false" />
+            <element signature="e#1939#2081#0" expanded="false" />
+            <element signature="e#2084#2218#0" expanded="false" />
+            <element signature="e#2570#2778#0" expanded="false" />
+            <element signature="e#2786#3014#0" expanded="false" />
+            <element signature="e#3591#3861#0" expanded="false" />
+            <element signature="e#3862#4124#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sideshow20151016/index.html">
+    <entry file="file://$PROJECT_DIR$/fuzzy.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sideshow20151016/js/rAF.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="-750">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="155" column="53" lean-forward="false" selection-start-line="155" selection-start-column="53" selection-end-line="155" selection-end-column="53" />
+        <state relative-caret-position="60">
+          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
           <folding>
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#li#2;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#li#3;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#li#4;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#li#6;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#6;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="false" />
