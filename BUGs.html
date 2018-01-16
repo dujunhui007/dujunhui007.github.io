@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="images/favicon.ico" rel="shortcut icon">
+    <title>BUG groups</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            width: 100%;
+        }
+        .bugContainer{
+            width: 70%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .bugContainer .bug li{
+            margin-bottom: 20px;
+        }
+        .bugContainer .bug li h3{
+            margin-bottom: 5px;
+            font-size: 24px;
+            color: red;
+        }
+        .bugContainer .bug li p{
+            font-size: 20px;
+            color: green;
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+<div class="bugContainer">
+    <ol class="bug">
+        <li>
+            <h3>迅雷会响应在 HTML5 video 标签内的 .mp4 视频文件并开始下载？</h3>
+            <p>解决办法：在阿里云OSS中设置Response Header中的值，把Content-Type修改为video/mp4即可</p>
+        </li>
+        <li>
+            <h3>本站中提供的语言切换中，英文的" ' " 失效问题？</h3>
+            <p>解决办法：更改为中文的" ’"</p>
+        </li>
+    </ol>
+
+</div>
+</body>
+</html>
