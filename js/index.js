@@ -122,13 +122,19 @@ function replaceAnimation() {
 replaceAnimation();
 
 //->音频的自动播放
+
 ~function () {
+  var musicArr=["好想大声说我爱你.mp3","liangzhu.mp3","music.mp3","victory.mp3","中华小当家赞美BGM.mp3","追梦赤子心.mp3","Five Hundred Miles（500英里）.mp3","怒放的生命.mp3","成都.mp3"];
+  var musicIndex=Math.round(Math.random() * (musicArr.length - 1));
+  var audioSrc="music/"+musicArr[musicIndex];
+
   var audioBox = document.getElementById('audioBox'),
     musicBox = document.getElementById('musicBox'),
     musicImg1 = musicBox.getElementsByTagName('img')[0],
     musicImg2 = musicBox.getElementsByTagName('img')[1];
 
   window.setTimeout(function () {
+    $("#audioBox").attr("src",audioSrc);
     audioBox.play();
     musicImg1.className = 'music musicMove';
     musicImg1.style.opacity = 1;
@@ -151,8 +157,9 @@ $('.deScroll').css('overflow', 'hidden'),
   $(".pageDown").click(function () {
     $('.deScroll').css('overflow', 'auto')
   }),
+
   $(window).scroll(function () {
     if ($(window).scrollTop() <= 0) {
       $('.deScroll').css('overflow', 'hidden')
     }
-  })
+  });
