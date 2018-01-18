@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95713c56-648e-4372-a456-306eb778a4f9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BUGs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/music/中华小当家赞美BGM.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/music/好想大声说我爱你.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/music/追梦赤子心.mp3" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BUGs/BUGgroups1.md" afterPath="$PROJECT_DIR$/BUGs/BUGGROUPS1.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BUGs/BUGgroups1.md" afterPath="$PROJECT_DIR$/BUGs/BUGgroups1.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -23,15 +25,34 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="56" />
+            <state relative-caret-position="369">
+              <caret line="212" column="48" lean-forward="false" selection-start-line="212" selection-start-column="48" selection-end-line="212" selection-end-column="48" />
               <folding>
+                <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#li#1;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#li#2;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#li#3;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#li#4;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#li#5;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#li#6;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Jq-sjz/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="633">
+              <caret line="459" column="0" lean-forward="false" selection-start-line="459" selection-start-column="0" selection-end-line="459" selection-end-column="0" />
+              <folding>
+                <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#6;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#7;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -98,9 +119,10 @@
         <option value="$PROJECT_DIR$/hello-i18n/hello-i18n/WebContent/resources/js/main.js" />
         <option value="$PROJECT_DIR$/language-switch/language switch.html" />
         <option value="$PROJECT_DIR$/language-switch/index.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/BUGs/BUGgroups1.md" />
         <option value="$PROJECT_DIR$/BUGs.html" />
+        <option value="$PROJECT_DIR$/Jq-sjz/index.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -135,6 +157,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -145,13 +168,17 @@
             <path>
               <item name="dujunhui007.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="dujunhui007.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="BUGs" type="462c0819:PsiDirectoryNode" />
+              <item name="Jq-sjz" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dujunhui007.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dujunhui007.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="music" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -165,15 +192,15 @@
     <property name="SearchEverywhereHistoryKey" value="btn01&#9;null&#9;null" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\myIndex\dujunhui007.github.io\language-switch\js" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\myIndex\dujunhui007.github.io\music" />
       <recent name="C:\myIndex\dujunhui007.github.io\language-switch\js" />
       <recent name="C:\myIndex\dujunhui007.github.io\language-switch" />
       <recent name="C:\myIndex\dujunhui007.github.io\jQuery-xh\js" />
       <recent name="C:\myIndex\dujunhui007.github.io\images" />
-      <recent name="C:\myIndex\dujunhui007.github.io" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\myIndex\dujunhui007.github.io\language-switch\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -234,18 +261,19 @@
       <workItem from="1515394436009" duration="12316000" />
       <workItem from="1515488340198" duration="739000" />
       <workItem from="1515643635325" duration="39000" />
-      <workItem from="1516081664014" duration="1297000" />
+      <workItem from="1516081664014" duration="2175000" />
+      <workItem from="1516268308062" duration="486000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107038000" />
+    <option name="totallyTimeSpent" value="108402000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18526785" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1845238" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -279,13 +307,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="101" column="2" lean-forward="false" selection-start-line="101" selection-start-column="2" selection-end-line="101" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gameDFJ/The-game-battle.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -594,7 +615,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="18" column="10" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -602,11 +622,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="415">
           <caret line="43" column="29" lean-forward="false" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BUGs/BUGgroups1.md">
+    <entry file="file://$PROJECT_DIR$/BUGs/BUGGROUPS1.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="125">
@@ -619,17 +638,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Jq-sjz/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="633">
+          <caret line="459" column="0" lean-forward="false" selection-start-line="459" selection-start-column="0" selection-end-line="459" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#6;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#7;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="56" />
+        <state relative-caret-position="369">
+          <caret line="212" column="48" lean-forward="false" selection-start-line="212" selection-start-column="48" selection-end-line="212" selection-end-column="48" />
           <folding>
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#li#1;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#li#2;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#li#3;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#li#4;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#5;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#li#6;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
