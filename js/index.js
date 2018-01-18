@@ -154,13 +154,13 @@ replaceAnimation();
   };
 }();
 
-$('.deScroll').css('overflow', 'hidden'),
-  $(".pageDown").click(function () {
-    $('.deScroll').css('overflow', 'auto')
-  }),
+// $('.deScroll').css('overflow', 'hidden'),
+//   $(".pageDown").click(function () {
+//     $('.deScroll').css('overflow', 'auto')
+//   })
 
-  $(window).scroll(function () {
-    if ($(window).scrollTop() <= 0) {
-      $('.deScroll').css('overflow', 'hidden')
-    }
-  });
+  // $(window).scroll(function () {
+  //   if ($(window).scrollTop() <= 0) {
+  //     $('.deScroll').css('overflow', 'hidden')
+  //   }
+  // });
