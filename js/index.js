@@ -124,7 +124,8 @@ replaceAnimation();
 //->音频的自动播放
 
 ~function () {
-  var musicArr=["好想大声说我爱你.mp3","liangzhu.mp3","music.mp3","victory.mp3","中华小当家赞美BGM.mp3","追梦赤子心.mp3","Five Hundred Miles（500英里）.mp3","怒放的生命.mp3","成都.mp3"];
+  //随机播放音乐
+  var musicArr=["好想大声说我爱你.mp3","梁祝.mp3","背景音乐2.mp3","背景音乐1.mp3","中华小当家赞美BGM.mp3","追梦赤子心.mp3","Five Hundred Miles（500英里）.mp3","怒放的生命.mp3","成都.mp3"];
   var musicIndex=Math.round(Math.random() * (musicArr.length - 1));
   var audioSrc="music/"+musicArr[musicIndex];
 
