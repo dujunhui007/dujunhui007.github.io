@@ -46,6 +46,7 @@
         <li>
             <h3>连续点击div其他的地方会出现一片蓝色?</h3>
             <p>body{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}</p>
+            <p>或者添加：document.onselectstart=new Function("return false");</p>
         </li>
     </ol>
 
