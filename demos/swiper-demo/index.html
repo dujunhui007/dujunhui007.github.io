@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+
+    <!-- Demo styles -->
+    <style>
+        html, body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            margin-top: 10%;
+            width: 80%;
+            height: 60%;
+            box-shadow: 0 0 3px #000;
+            border-radius: 5px;
+        }
+
+        .swiper-slide {
+            cursor: pointer;
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            box-shadow: 0 0 3px #000;
+        }
+
+        .dapp1 {
+            background: red;
+        }
+
+        .dapp2 {
+            background: orange;
+        }
+
+        .dapp3 {
+            background: yellow;
+        }
+
+        .dapp4 {
+            background: green;
+        }
+
+        .dapp5 {
+            background: darkcyan;
+        }
+
+        .dapp6 {
+            background: seashell;
+        }
+
+        .dapp7 {
+            background: dimgray;
+        }
+        .dapp8 {
+            background: springgreen;
+        }
+
+        .dapp9 {
+            background: mediumvioletred;
+        }
+
+        .dapp10 {
+            background: chocolate;
+        }
+
+    </style>
+</head>
+<body>
+<!-- Swiper -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide dapp1">Slide 1</div>
+        <div class="swiper-slide dapp2">Slide 2</div>
+        <div class="swiper-slide dapp3">Slide 3</div>
+        <div class="swiper-slide dapp4">Slide 4</div>
+        <div class="swiper-slide dapp5">Slide 5</div>
+        <div class="swiper-slide dapp6">Slide 6</div>
+        <div class="swiper-slide dapp7">Slide 7</div>
+        <div class="swiper-slide dapp8">Slide 8</div>
+        <div class="swiper-slide dapp9">Slide 9</div>
+        <div class="swiper-slide dapp10">Slide 10</div>
+    </div>
+    <!-- Add Pagination -->
+    <!--<div class="swiper-pagination"></div>-->
+
+    <!-- 如果需要导航按钮 -->
+    <!--<div class="swiper-button-prev"></div>-->
+    <!--<div class="swiper-button-next"></div>-->
+
+    <!-- 如果需要滚动条 -->
+    <!--<div class="swiper-scrollbar"></div>-->
+</div>
+
+<!-- Swiper JS -->
+
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/swiper-3.4.2.jquery.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var mySwiper = new Swiper('.swiper-container', {
+//    direction: 'vertical',
+//    pagination: '.swiper-pagination',
+//    paginationHide: true,
+//    paginationType: 'bullets',
+//    paginationClickable: true,
+//    clickable: true,
+    autoplay: 1000,
+    loop: true,
+
+    // 如果需要前进后退按钮
+//    nextButton: '.swiper-button-next',
+//    prevButton: '.swiper-button-prev',
+
+    // 如果需要滚动条
+//    scrollbar: '.swiper-scrollbar',
+
+    slidesPerView: 4,
+    spaceBetween: 30,
+//    pagination: {
+//      el: '.swiper-pagination',
+////      clickable: true,
+//      paginationType: 'bullets',
+//    }
+  });
+
+
+
+  $(".swiper-container").mouseenter(function () {//滑过悬停
+    mySwiper.stopAutoplay();//mySwiper 为上面你swiper实例化的名称
+  }).mouseleave(function(){//离开开启
+    mySwiper.startAutoplay();
+  });
+  
+  $(".swiper-slide").click(function () {
+    alert($(this).text())
+  })
+
+
+
+</script>
+</body>
+</html>
